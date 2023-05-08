@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+.service{
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0;
+}
+
+.boutique{
+    position: relative;
+    width: 15%;
+}
+
+.boutiqueTitle{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 50px;
+}
+
+.cafe{
+    position: relative;
+    width: 15%;
+}
+
+.cafeTitle{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 50px;
+}
+.musique{
+    position: relative;
+    width: 15%;
+}
+
+.musiqueTitle{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 50px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+
+.service{
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0;
+}
+
+.boutique{
+    position: relative;
+    width: 15%;
+}
+
+.boutiqueTitle{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 20px;
+}
+
+.cafe{
+    position: relative;
+    width: 15%;
+}
+
+.cafeTitle{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 20px;
+}
+.musique{
+    position: relative;
+    width: 15%;
+}
+
+.musiqueTitle{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 20px;
+}
+
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+.title{
+    text-align: center;
+    margin: 100px 0 40px;
+}
+
+.shopItemList{
+    display: flex;
+}
+
+.shopItem{
+    margin-left: 3px;
+}
+
+.shopItem:first-child{
+    margin-left: 0;
+}
+
+.shopItemImage{
+    width: 100%;
+}
+
+.shopItem:first-child{
+    margin-left: 0;
+}
+
+.itemName{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.yen{
+    font-size: 14px;
+    margin: 0 10px 10px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+}
