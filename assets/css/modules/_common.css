@@ -12,4 +12,10 @@
 
 @media screen and (max-width: 768px) {
     /* SP style */
+
+.wrapper{
+    background-color: #fff;
+}
+
+
 }

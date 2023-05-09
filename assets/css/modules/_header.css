@@ -4,77 +4,107 @@
 @media screen and (min-width: 769px) {
     /* PC style */
 
-.headerTop{
+.header-top{
     height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E6E6E6;
 }
 
-.title1{
-    font-size: 30px;
-    font-family: 'Cambria';
-}
-
-.title2{
-    font-size: 12px;
+.titleBox{
     text-align: center;
 }
 
-.nav{
+.mainTitle{
+    font-size: 30px;
+    text-align: center;
+}
+
+.subTitle{
+    font-size: 14px;
+    text-align: center;
+}
+
+.tab-area{
     display: flex;
 }
 
-.navItem{
+.tab{
     font-size: 12px;
     margin: 0 10px;
 }
 
-.navItem:not(:last-child) {
-    margin-right: 10px;
+.tab:first-child{
+    font-weight: bold;
 }
 
-.search{
-    border-bottom: 2px solid black;
+.tab.active{
+    border-bottom: 2px solid #000;
+}
+
+.header-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.panel-area{
     display: flex;
 }
 
-.headerBottom{
-    height: 70px;
-    border-bottom: 1px solid #E6E6E6;
+.panel{
+    display: none;
+    text-align: center;
+}
+
+.panel-list{
+    display: flex;
+}
+
+.panel-list li{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.panel.active{
+    display: block;
+}
+
+.header-item{
+    display: flex;
 }
 
 }
 
 @media screen and (max-width: 768px) {
     /* SP style */
-
-.headerTop{
-    height: 50px;
-    align-items: center;
-    border-bottom: 1px solid #E6E6E6;
+.header-top{
+    padding: 10px;
 }
 
-.title1{
-    font-size: 20px;
-    font-family: 'Cambria';
+
+.titleBox{
     text-align: center;
 }
 
-.title2{
+.mainTitle{
+    font-size: 20px;
+    text-align: center;
+}
+
+.subTitle{
     font-size: 10px;
     text-align: center;
 }
 
-.nav{
+.tab-area{
     display: none;
 }
 
-.search{
-    border-bottom: 2px solid black;
-    display: flex;
+.panel-area{
+    display: none;
 }
 
 }
-

@@ -8,37 +8,90 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='./assets/css/reset.css'>
     <link rel='stylesheet' href='./assets/css/main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script type="text/javascript" src='./assets/js/main.js'></script>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
-        <div class="headerTop">
-            <ul class="nav">
-                <li class="navItem">MAISON NYANKO</li>
-                <li class="navItem">CAFE NYANKO</li>
-                <li class="navItem">NYANKO MUSIQUE</li>
-                <li class="navItem">GALERIE NYANKO</li>
-            </ul>
-            <div class="titleWrap">
-                <h1 class="title1">MAISON NYANKO</h1>
-                <p class="title2">PARIS</p>
-            </div>
-            <div class="search">
-                <p>何をお探しですか？</p>
-                <i data-feather="search"></i>
+        <div class="header-top">
+            <nav>
+                <ul class="tab-area">
+                    <li class="tab active">MAISON NYANKO</li>
+                    <li class="tab">CAFE NYANKO</li>
+                    <li class="tab">NYANKO MUSIQUE</li>
+                    <li class="tab">GALERIE NYANKO</li>
+                </ul>
+            </nav>
+            <div class="titleBox">
+                <h1 class="mainTitle">MAISON NYANKO</h1>
+                <p class="subTitle">PARIS</p>
             </div>
         </div>
-        <div class="headerBottom"></div>
+        <div class="header-middle">
+            <div class="panel-area">
+                <div class="panel active">
+                    <ul class="panel-list">
+                        <li>HOTEL</li>
+                        <li>NEW</li>
+                        <li>メンズ</li>
+                        <li>レディース</li>
+                        <li>アクセサリー</li>
+                        <li>オブジェクト</li>
+                        <li>日本限定商品</li>
+                        <li>コラボレーション</li>
+                        <li>ブランドについて</li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <ul class="panel-list">
+                        <li>SHOP</li>
+                        <li>LOCATION</li>
+                        <li>ABOUT</li>
+                        <li>EVENTS</li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <ul class="panel-list">
+                        <li>ARTISTS</li>
+                        <li>ARTWORKS</li>
+                        <li>EVENTS</li>
+                    </ul>
+                </div>
+                <div class="panel"$()>
+                    <ul class="panel-list">
+                        <li>EXHIBITIONS</li>
+                        <li>LIBRARIE</li>
+                        <li>ABOUT</li>
+                    </ul>
+                </div>
+            </div><!--panel-area-->
+                    <ul class="header-item">
+                        <div class="country">
+                            <i data-feather="chevron-down"></i>
+                        </div>
+                        <div class="language">
+                            <i data-feather="chevron-down"></i>
+                        </div>
+                        <i data-feather="user"></i>
+                        <i data-feather="briefcase"></i>
+                    </ul>
+        </div><!--header-middle-->
     </header>
     <div class="heroWrap">
         <div class="hero">
             <img class="heroImage" src="./assets/images/hero1.jpg">
-            <p class="discover">DISCOVER</p>
+            <div class="discover">
+                <p>DISCOVER</p>
+                <i data-feather="arrow-right" class="arrow-right"></i>
+            </div>
         </div>
         <div class="hero">
             <img class="heroImage" src="./assets/images/hero2.jpg">
-            <p class="discover">DISCOVER</p>
+            <div class="discover">
+                <p>DISCOVER</p>
+                <i data-feather="arrow-right" class="arrow-right"></i>
+            </div>
         </div>
     </div>
     <section class="selection">
@@ -90,7 +143,6 @@
         <p class="follow">フォローする</p>
         <div class="snsIcon">
             <i data-feather="instagram"></i>
-            <i data-feather="twitter"></i>
             <i data-feather="music"></i>
             <i data-feather="disc"></i>
             <i data-feather="youtube"></i>
