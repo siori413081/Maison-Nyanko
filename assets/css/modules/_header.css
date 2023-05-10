@@ -76,6 +76,16 @@
     display: flex;
 }
 
+.country,.language,.user{
+    margin-right: 30px;
+}
+
+.bag{
+    margin-right: 10px;
+}
+
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -84,6 +94,37 @@
     padding: 10px;
 }
 
+.menu-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    cursor: pointer;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #000;
+    position: absolute;
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+}
+
+.menu-btn span:after {
+    top: 8px;
+}
 
 .titleBox{
     text-align: center;
@@ -106,5 +147,11 @@
 .panel-area{
     display: none;
 }
+
+.country,.language,.user{
+    display: none;
+}
+
+
 
 }

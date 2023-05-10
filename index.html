@@ -9,7 +9,6 @@
     <link rel='stylesheet' href='./assets/css/reset.css'>
     <link rel='stylesheet' href='./assets/css/main.css'>
     <link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script type="text/javascript" src='./assets/js/main.js'></script>
 </head>
 <body>
 <div class="wrapper">
@@ -23,6 +22,9 @@
                     <li class="tab">GALERIE NYANKO</li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            </div>
             <div class="titleBox">
                 <h1 class="mainTitle">MAISON NYANKO</h1>
                 <p class="subTitle">PARIS</p>
@@ -73,8 +75,8 @@
                         <div class="language">
                             <i data-feather="chevron-down"></i>
                         </div>
-                        <i data-feather="user"></i>
-                        <i data-feather="briefcase"></i>
+                        <i data-feather="user" class="user"></i>
+                        <i data-feather="briefcase" class="bag"></i>
                     </ul>
         </div><!--header-middle-->
     </header>
@@ -177,8 +179,8 @@
         <p class="brandBox">© Maison Nyanko 2023</p>
     </footer>
 </div>
-<script>
-    feather.replace()
-</script>
+<script>feather.replace()</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src='./assets/js/main.js'></script>
 </body>
 </html>

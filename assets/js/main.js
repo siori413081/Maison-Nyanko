@@ -1,6 +1,6 @@
 $(function(){
     $('.tab').hover(function(){
-        $('.tab .panel').removeClass('active');
+        $('.tab,.panel').removeClass('active');
 
         $(this).addClass('active');
 
