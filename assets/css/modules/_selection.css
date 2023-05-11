@@ -45,4 +45,9 @@
 
 @media screen and (max-width: 768px) {
     /* SP style */
+
+.shopItemList{
+    display: flex;
+}
+
 }

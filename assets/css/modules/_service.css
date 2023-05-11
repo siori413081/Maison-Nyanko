@@ -11,9 +11,6 @@
 }
 
 .serviceImage{
-    position: absolute;
-    top: 20px;
-    left: 50%;
     width: 60%;
 }
 
@@ -22,35 +19,46 @@
     width: 30%;
 }
 
+.backGroundColor-blue{
+    background-color: #1f5180;
+}
+
 .boutiqueTitle{
-    position: absolute;
-    top: 10px;
-    left: 50%;
     font-size: 50px;
+    text-align: center;
 }
 
 .cafe{
-    position: relative;
     width: 30%;
 }
 
 .cafeTitle{
-    position: absolute;
-    top: 10px;
-    left: 50%;
     font-size: 50px;
+    text-align: center;
 }
+
+.backGroundColor-green{
+    background-color: #2e8181;
+}
+
 .musique{
     position: relative;
     width: 30%;
 }
 
 .musiqueTitle{
-    position: absolute;
-    top: 10px;
-    left: 50%;
     font-size: 50px;
+    text-align: center;
 }
+
+.backGroundColor-red{
+    background-color: #fc5050;
+}
+
+.font-color-change{
+    color: #fff;
+}
+
 
 }
 
@@ -66,36 +74,33 @@
 .boutique{
     position: relative;
     width: 15%;
+    background-color: #1f5180;
 }
 
 .boutiqueTitle{
-    position: absolute;
-    top: 10px;
-    left: 50%;
     font-size: 20px;
+    text-align: center;
 }
 
 .cafe{
     position: relative;
     width: 15%;
+    background-color: #2e8181;
 }
 
 .cafeTitle{
-    position: absolute;
-    top: 10px;
-    left: 50%;
     font-size: 20px;
+    text-align: center;
 }
 .musique{
     position: relative;
     width: 15%;
+    background-color: #fc5050;
 }
 
 .musiqueTitle{
-    position: absolute;
-    top: 10px;
-    left: 50%;
     font-size: 20px;
+    text-align: center;
 }
 
 }

@@ -1,5 +1,7 @@
 @import url('./modules/_common.css');
 @import url('./modules/_header.css');
+@import url('./modules/_searchForm.css');
+@import url('./modules/_modal.css');
 @import url('./modules/_hero.css');
 @import url('./modules/_newsletter.css');
 @import url('./modules/_selection.css');

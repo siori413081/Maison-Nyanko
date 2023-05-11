@@ -7,20 +7,21 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='./assets/css/reset.css'>
-    <link rel='stylesheet' href='https://siori413081.github.io/portfolio1/assets/css/main.css'>
-    <link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel='stylesheet' href='./assets/css/main.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
         <div class="header-top">
-            <nav>
+            <nav class="navigation">
                 <ul class="tab-area">
                     <li class="tab active">MAISON NYANKO</li>
                     <li class="tab">CAFE NYANKO</li>
                     <li class="tab">NYANKO MUSIQUE</li>
                     <li class="tab">GALERIE NYANKO</li>
                 </ul>
+                <span class="slide-line"></span>
             </nav>
             <div class="hamburger-menu">
                 <label for="menu-btn-check" class="menu-btn"><span></span></label>
@@ -29,6 +30,10 @@
                 <h1 class="mainTitle">MAISON NYANKO</h1>
                 <p class="subTitle">PARIS</p>
             </div>
+            <form method="get" action="#" class="search_container">
+                <input type="text" placeholder="何をお探しですか？">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
         </div>
         <div class="header-middle">
             <div class="panel-area">
@@ -70,15 +75,42 @@
             </div><!--panel-area-->
                     <ul class="header-item">
                         <div class="country">
-                            <i data-feather="chevron-down"></i>
+                            <i data-feather="chevron-down" class="country-arrow"></i>
                         </div>
                         <div class="language">
+                            <p>JP</p>
                             <i data-feather="chevron-down"></i>
                         </div>
                         <i data-feather="user" class="user"></i>
                         <i data-feather="briefcase" class="bag"></i>
                     </ul>
         </div><!--header-middle-->
+        <!--modal-->
+        <div class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-text">
+                    <div class="modal-title">
+                        <h3 class="modal-maintitle">MAISON NYANKO</h3>
+                        <p class="modal-subtitle">PARIS</p>
+                    </div>
+                        <h4 class="modal-message">世界中に配送できるようになりました！</h4>
+                        <div class="modal-menu">
+                            <p>配送先を変更</p>
+                            <select name="">
+                                <option value="">Japan</option>
+                            </select>
+                            <p>通貨の変更</p>
+                            <select name="">
+                                <option value="">Yen</option>
+                            </select>
+                        </div>
+                        <div class="modal-button-wrap">
+                            <button type="button" id="modal-button1">保存</button>
+                            <button type="button" id="modal-button2">キャンセル</button>
+                        </div>
+                </div>
+                <button type="button" class="modal-close"><i data-feather="x"></i></button>
+            </div>
     </header>
     <div class="heroWrap">
         <div class="hero">
@@ -123,8 +155,8 @@
     </section>
     <section class="service">
         <div class="boutique">
-            <p class="boutiqueTitle">BOUTIQUE</p>
-            <img class="serviceImage" src="./assets/images/boutique.jpg">
+                <p class="boutiqueTitle">BOUTIQUE</p>
+                <img class="serviceImage" src="./assets/images/boutique.jpg">
         </div>
         <div class="cafe">
             <p class="cafeTitle">CAFE</p>

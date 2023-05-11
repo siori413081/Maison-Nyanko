@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+.search_container{
+    position: relative;
+    border-bottom: 2px solid #000;
+    height: 2.3em;
+    width: 500px;
+    overflow: hidden;
+}
+.search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+    font-size: 12px;
+}
+.search_container input[type="text"]:focus {
+    outline : none;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+
+.search_container{
+    position: relative;
+    border-bottom: 2px solid #000;
+    height: 2.3em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+    font-size: 16px;
+}
+
+.search_container input[type="text"]:focus {
+    outline : none;
+}
+
+}
