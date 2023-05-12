@@ -4,16 +4,71 @@
 @media screen and (min-width: 769px) {
     /* PC style */
 
-.title{
-    text-align: center;
+.selection{
+    position: relative;
+}
+
+.selection-top{
     margin: 100px 0 40px;
+}
+
+.title{
+    position: absolute;
+    left: 50%;
+}
+
+.arrow-wrap{
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+.arrow-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.arrow-left {
+    position: relative
+}
+/* ボタン左の中身（三角を擬似要素で表現） */
+.arrow-left:before {
+content: "";
+width: 10px;
+height: 10px;
+border-top: 2px solid #000;
+border-left: 2px solid #000;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-30%, -50%)rotate(-45deg);
+}
+/* 右 */
+.arrow-right {
+position: relative
+}
+/* ボタン右の中身（三角を擬似要素で表現） */
+.arrow-right:before {
+content: "";
+width: 10px;
+height: 10px;
+border-top: 2px solid #000;
+border-left: 2px solid #000;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-70%, -50%)rotate(135deg);
 }
 
 .shopItemList{
     display: flex;
+    width: 1512px;
 }
 
 .shopItem{
+    width: calc(100%/4);
     margin-left: 3px;
 }
 
@@ -40,6 +95,7 @@
     font-size: 14px;
     margin: 0 10px 10px;
 }
+
 
 }
 

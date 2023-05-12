@@ -28,15 +28,17 @@
 }
 
 .navigation{
-    position: relative;
+    height: 80px;
 }
 
 .tab-area{
     display: flex;
+    height: 100%;
 }
 
 .tab{
     font-size: 12px;
+    line-height: 80px;
     margin: 0 10px;
     cursor: pointer;
 }
@@ -59,19 +61,23 @@
 
 .panel-area{
     display: flex;
+    height: 70px;
 }
 
 .panel{
     display: none;
+    height: 100%;
     text-align: center;
 }
 
 .panel-list{
     display: flex;
+    height: 100%;
 }
 
 .panel-list li{
     font-size: 12px;
+    line-height: 70px;
     margin: 0 10px;
     cursor: pointer;
 }
