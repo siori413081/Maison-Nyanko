@@ -7,11 +7,15 @@
 .service{
     display: flex;
     justify-content: space-around;
-    margin: 200px 0;
+    padding: 150px 0;
+    height: 30rem;
 }
 
 .serviceImage{
     width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
 }
 
 .boutique{
@@ -21,6 +25,7 @@
 
 .backGroundColor-blue{
     background-color: #1f5180;
+    transform: rotate(-10deg);
 }
 
 .boutiqueTitle{
@@ -30,6 +35,7 @@
 
 .cafe{
     width: 30%;
+    position: relative;
 }
 
 .cafeTitle{
@@ -39,6 +45,7 @@
 
 .backGroundColor-green{
     background-color: #2e8181;
+    transform: rotate(10deg);
 }
 
 .musique{
@@ -53,6 +60,7 @@
 
 .backGroundColor-red{
     background-color: #fc5050;
+    transform: rotate(-10deg);
 }
 
 .font-color-change{

@@ -9,7 +9,9 @@
 }
 
 .selection-top{
-    margin: 100px 0 40px;
+    padding: 100px 0 70px;
+    display: flex;
+    align-items: center;
 }
 
 .title{
@@ -31,7 +33,8 @@
 }
 
 .arrow-left {
-    position: relative
+    position: relative;
+    margin-right: 10px;
 }
 /* ボタン左の中身（三角を擬似要素で表現） */
 .arrow-left:before {
@@ -64,11 +67,12 @@ transform: translate(-70%, -50%)rotate(135deg);
 
 .shopItemList{
     display: flex;
-    width: 1512px;
+    width:94%;
+    margin:0 auto;
 }
 
 .shopItem{
-    width: calc(100%/4);
+    width: 100%;
     margin-left: 3px;
 }
 
