@@ -82,3 +82,13 @@ $(function(){
         $(this).removeClass('panel-addClass');//消す
     });
 });
+
+$('.open-btn').click(function(){
+    $(this).addClass('active');
+    $('.open-nav').addClass('panelactive');
+});
+
+$('.open-nav a').click(function(){
+    $('.open-btn').removeClass('active');
+    $('.open-nav').removeClass('panelactive');
+});

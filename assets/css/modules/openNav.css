@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+.open-nav-title{
+    color: #707070;
+    font-size: 14px;
+}
+
+.open-nav{
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.open-nav.panelactive{
+    opacity: 1;
+    z-index: 999;
+}
+
+.open-nav ul{
+    display: none;
+    z-index: 999;
+}
+
+.open-nav li a{
+    color: #000;
+    font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+
+.open-nav-title{
+    color: #707070;
+    font-size: 14px;
+}
+
+.open-nav{
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.open-nav.panelactive{
+    opacity: 1;
+    z-index: 999;
+}
+
+.open-nav ul{
+    display: none;
+    z-index: 999;
+}
+
+.open-nav li a{
+    color: #000;
+    font-size: 14px;
+}
+
+}
