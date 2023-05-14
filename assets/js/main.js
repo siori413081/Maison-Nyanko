@@ -84,11 +84,11 @@ $(function(){
 });
 
 $('.open-btn').click(function(){
-    $(this).addClass('active');
-    $('.open-nav').addClass('panelactive');
+    $('.open-nav,close-btn-x').addClass('panelactive');
+    $('open-btn-search').addClass('active');
 });
 
-$('.open-nav a').click(function(){
-    $('.open-btn').removeClass('active');
+$('.close-btn-x').click(function(){
     $('.open-nav').removeClass('panelactive');
+    $('open-btn-search').removeClass('active');
 });

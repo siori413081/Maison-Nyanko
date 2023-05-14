@@ -20,7 +20,7 @@
     transition: all 0.3s;
 }
 
-.open-nav.panelactive{
+.open-nav.close-btn-x.panelactive{
     opacity: 1;
     z-index: 999;
 }
@@ -33,6 +33,20 @@
 .open-nav li a{
     color: #000;
     font-size: 14px;
+}
+
+#open-btn-search.active{
+    opacity: 0;
+    z-index: -1;
+}
+
+.close-btn-x{
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 80px;
+    right: 10px;
+    cursor: pointer;
 }
 
 }
