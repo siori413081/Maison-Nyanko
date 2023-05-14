@@ -92,3 +92,13 @@ $('.close-btn-x').click(function(){
     $('.open-nav').removeClass('panelactive');
     $('open-btn-search').removeClass('active');
 });
+
+$('.hamburger-menu-btn').click(function(){
+    $(this).addClass('.active');
+    $('sp-open-menu').addClass('.start');
+});
+
+$('.sp-open-menu a').click(function () {
+    $('.hamburger-menu-btn').removeClass('active');
+    $('.sp-open-menu a').removeClass('start');
+});

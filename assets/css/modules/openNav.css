@@ -30,7 +30,7 @@
     z-index: 999;
 }
 
-.open-nav li a{
+.open-nav li{
     color: #000;
     font-size: 14px;
 }
@@ -63,7 +63,7 @@
     position: fixed;
     z-index: -1;
     opacity: 0;
-    top: 100px;
+    top: 90px;
     width: 100%;
     height: 100vh;
     background-color: #fff;
@@ -80,9 +80,23 @@
     z-index: 999;
 }
 
-.open-nav li a{
+.open-nav li{
     color: #000;
     font-size: 14px;
+}
+
+#open-btn-search.active{
+    opacity: 0;
+    z-index: -1;
+}
+
+.close-btn-x{
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 80px;
+    right: 10px;
+    cursor: pointer;
 }
 
 }

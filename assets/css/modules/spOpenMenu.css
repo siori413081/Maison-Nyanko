@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+
+.sp-open-menu{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 120%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.6s;
+}
+
+.sp-open-menu.start{
+    left: 0;
+}
+
+.sp-open-menu ul{
+    display: flex;
+    z-index: 999;
+}
+
+.sp-open-menu li{
+    color: #000;
+    font-size: 16px;
+}
+
+.hamburger-menu-btn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+	background-color: #666;
+  	width: 45%;
+}
+
+.hamburger-menu-btn span:nth-of-type(1) {
+	top:15px;	
+}
+
+.hamburger-menu-btn span:nth-of-type(2) {
+	top:23px;
+}
+
+.hamburger-menu-btn span:nth-of-type(3) {
+	top:31px;
+}
+
+.hamburger-menu-btn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.hamburger-menu-btn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.hamburger-menu-btn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+}

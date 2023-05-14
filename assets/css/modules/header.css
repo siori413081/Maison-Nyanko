@@ -135,7 +135,7 @@
     z-index: 1;
 }
 
-.menu-btn {
+.hamburger-menu-btn {
     position: fixed;
     top: 0;
     left: 0;
@@ -148,9 +148,9 @@
     cursor: pointer;
 }
 
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
+.hamburger-menu-btn span,
+.hamburger-menu-btn span:before,
+.hamburger-menu-btn span:after {
     content: '';
     display: block;
     height: 2px;
@@ -159,11 +159,11 @@
     position: absolute;
 }
 
-.menu-btn span:before {
+.hamburger-menu-btn span:before {
     bottom: 8px;
 }
 
-.menu-btn span:after {
+.hamburger-menu-btn span:after {
     top: 8px;
 }
 
