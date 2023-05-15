@@ -42,7 +42,6 @@
 
 .tab{
     font-size: 12px;
-    line-height: 80px;
     margin: 0 10px;
     cursor: pointer;
 }
@@ -99,7 +98,11 @@
     display: flex;
 }
 
-.country,.user{
+.country{
+    display: flex;
+}
+
+.user{
     margin-right: 30px;
     cursor: pointer;
 }

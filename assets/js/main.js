@@ -1,3 +1,5 @@
+
+/*headerのhoverしたら表示されるタブバー */
 $(function(){
     $('.tab').hover(function(){
         $('.tab,.panel').removeClass('active');
@@ -9,6 +11,18 @@ $(function(){
     });
 });
 
+/* hover後のタブメニューの下線 */
+$(function(){
+    $('.panel-list li').mouseover(function(){
+        $(this).addClass('panel-addClass');//付与
+    });
+
+    $('.panel-list li').mouseout(function(){
+        $(this).removeClass('panel-addClass');//消す
+    });
+});
+
+/* modal画面の表示 */
 $(function(){
     $('.country-arrow').click(function(){
         $('.modal').fadeTo(500,0.7);
@@ -19,6 +33,7 @@ $(function(){
     });
 });
 
+/* service部分の背景傾け＆文字白くする */
 $(function(){
     $('.boutique').mouseover(function(){
         $(this).addClass('backGroundColor-blue');
@@ -73,32 +88,34 @@ $(function(){
     });
 });
 
+/*検索部分をクリックした後の画面表示 */
 $(function(){
-    $('.panel-list li').mouseover(function(){
-        $(this).addClass('panel-addClass');//付与
-    });
-
-    $('.panel-list li').mouseout(function(){
-        $(this).removeClass('panel-addClass');//消す
+    $('.open-btn').click(function(){
+        $('.open-nav,close-btn-x').addClass('panelActive');
+        $('open-btn-search').addClass('active');
     });
 });
 
-$('.open-btn').click(function(){
-    $('.open-nav,close-btn-x').addClass('panelactive');
-    $('open-btn-search').addClass('active');
+/*検索部分をクリックした後の画面を閉じる */
+$(function(){
+    $('.close-btn-x').click(function(){
+        $('.open-nav').removeClass('panelActive');
+        $('open-btn-search').removeClass('active');
+    });
 });
 
-$('.close-btn-x').click(function(){
-    $('.open-nav').removeClass('panelactive');
-    $('open-btn-search').removeClass('active');
+/*ハンバーガーメニューをクリックした後のメニュー表示 */
+$(function(){
+    $('.hamburger-menu-btn').click(function(){
+        $(this).addClass('.active');
+        $('sp-open-menu').addClass('.start');
+    });
 });
 
-$('.hamburger-menu-btn').click(function(){
-    $(this).addClass('.active');
-    $('sp-open-menu').addClass('.start');
-});
-
-$('.sp-open-menu a').click(function () {
-    $('.hamburger-menu-btn').removeClass('active');
-    $('.sp-open-menu a').removeClass('start');
+/*ハンバーガーメニューを閉じる */
+$(function(){
+    $('.sp-open-menu a').click(function () {
+        $('.hamburger-menu-btn').removeClass('active');
+        $('.sp-open-menu a').removeClass('start');
+    });
 });

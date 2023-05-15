@@ -5,13 +5,11 @@
     /* PC style */
 
 .search_container{
+    position: relative;
     border-bottom: 2px solid #000;
     height: 80px;
     width: 500px;
     overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .search_container input[type="text"]{
     border: none;
@@ -20,6 +18,12 @@
 }
 .search_container input[type="text"]:focus {
     outline : none;
+}
+
+.fa{
+    position: absolute;
+    right: 10px;
+    top: 50%;
 }
 
 }
