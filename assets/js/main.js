@@ -92,7 +92,7 @@ $(function(){
 $(function(){
     $('.open-btn').click(function(){
         $('.open-nav,close-btn-x').addClass('panelActive');
-        $('open-btn-search').addClass('active');
+        $('#open-btn-search').addClass('active');
     });
 });
 
@@ -100,15 +100,15 @@ $(function(){
 $(function(){
     $('.close-btn-x').click(function(){
         $('.open-nav').removeClass('panelActive');
-        $('open-btn-search').removeClass('active');
+        $('#open-btn-search').removeClass('active');
     });
 });
 
 /*ハンバーガーメニューをクリックした後のメニュー表示 */
 $(function(){
     $('.hamburger-menu-btn').click(function(){
-        $(this).addClass('.active');
-        $('sp-open-menu').addClass('.start');
+        $(this).addClass('active');
+        $('.sp-open-menu').addClass('start');
     });
 });
 
