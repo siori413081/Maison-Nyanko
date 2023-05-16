@@ -106,8 +106,22 @@ transform: translate(-70%, -50%)rotate(135deg);
 @media screen and (max-width: 768px) {
     /* SP style */
 
+.selection{
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+}
+
 .shopItemList{
+    width: 1500px;
     display: flex;
+}
+
+.arrow-wrap{
+    display: none;
 }
 
 }

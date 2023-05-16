@@ -5,62 +5,78 @@
     /* PC style */
 
 .service{
+    padding: 100px 50px;
+    height: 35rem;
+}
+
+.service-carousel-area{
+    height: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 150px 0;
-    height: 30rem;
+}
+
+.boutique,.cafe,.musique{
+    width: 100%;
+    height: 100%;
+}
+
+.boutique-item,.cafe-item,.musique-item{
+    position: relative;
+    width: 30%;
+    cursor: pointer;
 }
 
 .serviceImage{
-    width: 60%;
     position: absolute;
-    top: 20%;
-    left: 20%;
-}
-
-.boutique{
-    position: relative;
-    width: 30%;
-}
-
-.backGroundColor-blue{
-    background-color: #1f5180;
-    transform: rotate(-10deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
 }
 
 .boutiqueTitle{
-    font-size: 50px;
-    text-align: center;
-}
-
-.cafe{
-    width: 30%;
-    position: relative;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: 5vw;
+    z-index: 2;
 }
 
 .cafeTitle{
-    font-size: 50px;
-    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: 5vw;
+    z-index: 2;
+}
+
+.musiqueTitle{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: 5vw;
+    z-index: 2;
 }
 
 .backGroundColor-green{
     background-color: #2e8181;
     transform: rotate(10deg);
+    transition: all 0.3s;
 }
 
-.musique{
-    position: relative;
-    width: 30%;
-}
-
-.musiqueTitle{
-    font-size: 50px;
-    text-align: center;
+.backGroundColor-blue{
+    background-color: #1f5180;
+    transform: rotate(-10deg);
+    transition: all 0.3s;
 }
 
 .backGroundColor-red{
     background-color: #fc5050;
     transform: rotate(-10deg);
+    transition: all 0.3s;
 }
 
 .font-color-change{
@@ -74,41 +90,91 @@
     /* SP style */
 
 .service{
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.service-carousel{
+    width: 500px;
+    height: 450px;
+    position: relative;
+}
+
+.service-carousel-area{
+    height: 450px;
     display: flex;
-    justify-content: space-around;
-    margin: 200px 0;
+    position: absolute;
+}
+
+.service-carousel-list{
+    position: relative;
+    width: 500px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.serviceImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+}
+
+.boutique-item{
 }
 
 .boutique{
-    position: relative;
-    width: 15%;
+    width: 100%;
+    height: 450px;
     background-color: #1f5180;
 }
 
 .boutiqueTitle{
-    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3rem;
     text-align: center;
+    z-index: 2;
+}
+
+.cafe-item{
 }
 
 .cafe{
-    position: relative;
-    width: 15%;
+    width: 100%;
+    height: 450px;
     background-color: #2e8181;
 }
 
 .cafeTitle{
-    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3rem;
     text-align: center;
+    z-index: 2;
+}
+
+.musique-item{
 }
 .musique{
-    position: relative;
-    width: 15%;
+    width: 100%;
+    height: 450px;
     background-color: #fc5050;
 }
 
 .musiqueTitle{
-    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3rem;
     text-align: center;
+    z-index: 2;
 }
 
 }

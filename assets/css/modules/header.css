@@ -8,13 +8,12 @@
     position: fixed;
     width: 100%;
     height: 80px;
-    line-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E6E6E6;
     background-color: #fff;
-    z-index: 1;
+    z-index: 3;
 }
 
 .titleBox{
@@ -34,6 +33,7 @@
 
 .navigation{
     height: 80px;
+    line-height: 80px;
 }
 
 .tab-area{
@@ -132,7 +132,7 @@
     position: fixed;
     padding: 10px;
     border-bottom: 1px solid #E6E6E6;
-    z-index: 1;
+    z-index: 3;
 }
 
 .hamburger-menu-btn {

@@ -45,10 +45,10 @@ $(function(){
 
 $(function(){
     $('.boutique').mouseover(function(){
-        $('.boutique p').addClass('font-color-change');
+        $('.boutiqueTitle').addClass('font-color-change');
     });
-    $('.boutique p').mouseout(function(){
-        $(this).removeClass('font-color-change');
+    $('.boutique').mouseout(function(){
+        $('.boutiqueTitle').removeClass('font-color-change');
     });
 });
 
@@ -63,10 +63,10 @@ $(function(){
 
 $(function(){
     $('.cafe').mouseover(function(){
-        $('.cafe p').addClass('font-color-change');
+        $('.cafeTitle').addClass('font-color-change');
     });
-    $('.cafe p').mouseout(function(){
-        $(this).removeClass('font-color-change');
+    $('.cafe').mouseout(function(){
+        $('.cafeTitle').removeClass('font-color-change');
     });
 });
 
@@ -81,17 +81,17 @@ $(function(){
 
 $(function(){
     $('.musique').mouseover(function(){
-        $('.musique p').addClass('font-color-change');
+        $('.musiqueTitle').addClass('font-color-change');
     });
-    $('.musique p').mouseout(function(){
-        $(this).removeClass('font-color-change');
+    $('.musique').mouseout(function(){
+        $('.musiqueTitle').removeClass('font-color-change');
     });
 });
 
 /*検索部分をクリックした後の画面表示 */
 $(function(){
     $('.open-btn').click(function(){
-        $('.open-nav,close-btn-x').addClass('panelActive');
+        $('.open-nav,.close-btn-x').addClass('active');
         $('#open-btn-search').addClass('active');
     });
 });
@@ -99,7 +99,7 @@ $(function(){
 /*検索部分をクリックした後の画面を閉じる */
 $(function(){
     $('.close-btn-x').click(function(){
-        $('.open-nav').removeClass('panelActive');
+        $('.open-nav').removeClass('active');
         $('#open-btn-search').removeClass('active');
     });
 });
@@ -119,3 +119,18 @@ $(function(){
         $('.sp-open-menu a').removeClass('start');
     });
 });
+
+/*serviceカルーセル */
+$(function(){
+    let width = $('.service-carousel-list').outerWidth(true);//1枚分のwidth
+    let length = $('.service-carousel-list').length;//何枚あるか
+    let slideArea = width * length;//スライド全体の幅
+    $('.service-carousel-area').css('width', slideArea);//serviceに計算した幅を入れる
+});
+
+function changeSlide(){//カルーセル全体を左に動かす動き
+    $('.service-carousel-area').stop().animate({ //stopでanimationを1回1回とめる
+        left: slideCurrent * -width//スライドの枚数×リスト1枚分左に動かす
+    });
+};
+

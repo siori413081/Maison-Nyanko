@@ -7,6 +7,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='./assets/css/reset.css'>
+    <!--link rel='stylesheet' href='./assets/css/main.css'--><!--コメントアウトで切り替え-->
     <link rel='stylesheet' href='https://siori413081.github.io/portfolio1/assets/css/main.css'>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -43,7 +44,7 @@
                 <i class="fa fa-search" id="open-btn-search"></i>
                 <i data-feather="x" class="close-btn-x"></i>
             </form>
-            <!--検索部分クリックした後の画面-->
+            <!--検索部分クリックした後の画面
             <nav class="open-nav">
                 <h4 class="open-nav-title">Suggestions</h4>
                 <ul>
@@ -53,8 +54,8 @@
                     <li><a href="#"></a>Dressed Cat</li>
                     <li><a href="#"></a>Cat Head</li>
                 </ul>
-            </nav>
-        </div>
+            </nav>-->
+        </div><!--header-top-->
         <!--jQueryでhover後のメニュー-->
         <div class="header-middle">
             <div class="panel-area">
@@ -189,19 +190,24 @@
                 </li>
             </ul>
     </section>
-    <section class="service">
-        <div class="boutique">
-                <p class="boutiqueTitle">BOUTIQUE</p>
-                <img class="serviceImage" src="./assets/images/boutique.jpg">
-        </div>
-        <div class="cafe">
-            <p class="cafeTitle">CAFE</p>
-            <img class="serviceImage" src="./assets/images/cafe.jpg">
-        </div>
-        <div class="musique">
-            <p class="musiqueTitle">MUSIQUE</p>
-            <img class="serviceImage" src="./assets/images/musique.jpg">
-        </div>
+    <section class="service service-carousel">
+            <div class="service-carousel-area">   
+                <div class="boutique-item service-carousel-list">
+                    <div class="boutique"></div>
+                    <p class="boutiqueTitle">BOUTIQUE</p>
+                    <img class="serviceImage" src="./assets/images/boutique.jpg">
+                </div>
+                <div class="cafe-item service-carousel-list">
+                    <div class="cafe"></div>
+                    <p class="cafeTitle">CAFE</p>
+                    <img class="serviceImage" src="./assets/images/cafe.jpg">
+                </div>
+                <div class="musique-item service-carousel-list">
+                    <div class="musique"></div>
+                    <p class="musiqueTitle">MUSIQUE</p>
+                    <img class="serviceImage" src="./assets/images/musique.jpg">
+                </div>
+            </div>
     </section>
     <section class="newsLetter">
         <p class="message">NEWSLETTER MAISON NYANKO</p>
