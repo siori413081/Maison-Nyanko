@@ -108,7 +108,7 @@ $(function(){
 $(function(){
     $('.hamburger-menu-btn').click(function(){
         $(this).addClass('active');
-        $('.sp-open-menu').addClass('start');
+        $('.sp-open-menu').addClass('active');
     });
 });
 
@@ -116,21 +116,42 @@ $(function(){
 $(function(){
     $('.sp-open-menu a').click(function () {
         $('.hamburger-menu-btn').removeClass('active');
-        $('.sp-open-menu a').removeClass('start');
+        $('.sp-open-menu a').removeClass('active');
     });
 });
 
-/*serviceカルーセル */
+/* selection スライダー */
 $(function(){
-    let width = $('.service-carousel-list').outerWidth(true);//1枚分のwidth
-    let length = $('.service-carousel-list').length;//何枚あるか
-    let slideArea = width * length;//スライド全体の幅
-    $('.service-carousel-area').css('width', slideArea);//serviceに計算した幅を入れる
+    w = $(window).width();
+    if ( w <= 769 ){
+        //SP対応（760px以下の時）
+        $('.selection-slider').slick({
+            autoplay: false,//自動的に動き出すか。初期値はfalse。
+            infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+            slidesToShow: 2,//スライドを画面に3枚見せる
+            slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+            arrows: false,//ボタンなし
+        });
+    } else {
+        //PC対応
+        $('.selection-slider').slick('unslick');
+    }
 });
 
-function changeSlide(){//カルーセル全体を左に動かす動き
-    $('.service-carousel-area').stop().animate({ //stopでanimationを1回1回とめる
-        left: slideCurrent * -width//スライドの枚数×リスト1枚分左に動かす
+/* service スライダー */
+$(function(){
+w = $(window).width();
+if ( w <= 768 ){
+    //SP対応（760px以下の時）
+    $('.service-slider').slick({
+        autoplay: false,//自動的に動き出すか。初期値はfalse。
+        infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+        slidesToShow: 1,//スライドを画面に1枚見せる
+        slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+        arrows: false,//ボタンなし
     });
-};
-
+    } else {
+        //PC対応
+        $('.service-slider').slick('unslick');
+    }
+});

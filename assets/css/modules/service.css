@@ -7,10 +7,6 @@
 .service{
     padding: 100px 50px;
     height: 35rem;
-}
-
-.service-carousel-area{
-    height: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -89,28 +85,16 @@
 @media screen and (max-width: 768px) {
     /* SP style */
 
+.slick-list{
+    padding: 0 10% 0 10% !important;/*前後のスライドチラ見せ*/
+}
+
+.slick-slide{
+}
+
 .service{
-    overflow: hidden;
-    padding: 100px 0;
-}
-
-.service-carousel{
-    width: 500px;
-    height: 450px;
-    position: relative;
-}
-
-.service-carousel-area{
-    height: 450px;
     display: flex;
-    position: absolute;
-}
-
-.service-carousel-list{
-    position: relative;
-    width: 500px;
-    height: 100%;
-    margin-right: 30px;
+    padding: 100px 0;
 }
 
 .serviceImage{
@@ -122,6 +106,8 @@
 }
 
 .boutique-item{
+    position: relative;
+    margin-right: 30px;
 }
 
 .boutique{
@@ -141,6 +127,8 @@
 }
 
 .cafe-item{
+    position: relative;
+    margin-right: 30px;
 }
 
 .cafe{
@@ -160,7 +148,10 @@
 }
 
 .musique-item{
+    position: relative;
+    margin-right: 30px;
 }
+
 .musique{
     width: 100%;
     height: 450px;

@@ -67,7 +67,7 @@ transform: translate(-70%, -50%)rotate(135deg);
 
 .shopItemList{
     display: flex;
-    width:94%;
+    width: 1700px;
     margin:0 auto;
 }
 
@@ -106,18 +106,45 @@ transform: translate(-70%, -50%)rotate(135deg);
 @media screen and (max-width: 768px) {
     /* SP style */
 
+.selection-slider{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.slider.slick-slide{
+    margin: 0 5px;
+}
+
+.shopItemList{
+    display: flex;
+}
+
+.shopItem{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
 .selection{
     padding: 100px 0;
     overflow: hidden;
 }
 
 .title{
+    font-size: 16px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
-.shopItemList{
-    width: 1500px;
-    display: flex;
+.itemName{
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.yen{
+    font-size: 14px;
 }
 
 .arrow-wrap{
