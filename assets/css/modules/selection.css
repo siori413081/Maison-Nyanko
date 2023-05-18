@@ -5,20 +5,16 @@
     /* PC style */
 
 .selection{
-    position: relative;
 }
 
 .selection-top{
     padding: 100px 0 70px;
-    display: flex;
-    align-items: center;
 }
 
 .title{
-    position: absolute;
-    left: 50%;
+    text-align: center;
 }
-
+/*
 .arrow-wrap{
     display: flex;
     position: absolute;
@@ -36,6 +32,7 @@
     position: relative;
     margin-right: 10px;
 }
+*/
 /* ボタン左の中身（三角を擬似要素で表現） */
 .arrow-left:before {
 content: "";
@@ -107,8 +104,7 @@ transform: translate(-70%, -50%)rotate(135deg);
     /* SP style */
 
 .selection-slider{
-    width: 94%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .slider.slick-slide{

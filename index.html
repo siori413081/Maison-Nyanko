@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="header">
+    <header class="header-pc">
         <div class="header-top">
             <nav class="navigation">
                 <ul class="tab-area">
@@ -135,6 +135,98 @@
                 <button type="button" class="modal-close"><i data-feather="x"></i></button>
             </div>
     </header>
+    <header class="header-sp">
+        <div class="header-top">
+            <div class="hamburger-menu">
+                <label for="menu-btn-check" class="hamburger-menu-btn"><span></span></label>
+            </div>
+                <!--ハンバーガーメニュークリックしたあとのメニュー-->
+                <div class="sp-open-menu">
+                    <div class="sp-open-menu-top">
+                        <i data-feather="github" class="cat"></i>
+                        <span class="sp-close-x"></span>
+                    </div>
+                    <div class="sp-tab">
+                        <ul>
+                            <li class="active"><a href="#"></a>MAISON NYANKO</li>
+                            <li><a href="#"></a>CAFE NYANKO</li>
+                            <li><a href="#"></a>NYANKO MUSIQUE</li>
+                            <li><a href="#"></a>GALERIE NYANKO</li>
+                        </ul>
+                    </div>
+                    <div class="sp-panel active">
+                        <ul>
+                            <li>HOTEL OLYMPIA</li>
+                            <li>NEW</li>
+                            <li>MEN</li>
+                            <li>WOMEN</li>
+                            <li>ACCESSORIES</li>
+                            <li>OBJECTS</li>
+                            <li>JAPAN EXCLUSIVE</li>
+                            <li>COLLABS</li>
+                            <li>ABOUT</li>
+                        </ul>
+                    </div>
+                    <div class="sp-panel">
+                        <ul>
+                            <li>SHOP</li>
+                            <li>LOCATIONS</li>
+                            <li>ABOUT</li>
+                            <li>EVENTS</li>
+                        </ul>
+                    </div>
+                    <div class="sp-panel">
+                        <ul>
+                            <li>ARTISTS</li>
+                            <li>ARTWORKS</li>
+                            <li>EVENTS</li>
+                        </ul>
+                    </div>
+                    <div class="sp-panel">
+                        <ul>
+                            <li>EXHIBITIONS</li>
+                            <li>LIBRARIE</li>
+                            <li>ABOUT</li>
+                        </ul>
+                    </div>
+                    <div class="sp-item">
+                        <p><a href="#">My Account</a></p>
+                        <p><a href="#">Newsletter</a></p>
+                    </div>
+                    <div class="sp-select">
+                        <div class="sp-country">
+                            <p>Ship to</p>
+                        </div>
+                        <div class="sp-language">
+                            <p>Language</p>
+                        </div>
+                    </div>
+                </div><!--so-open-menu-->
+            <div class="titleBox">
+                <h1 class="mainTitle">MAISON NYANKO</h1>
+                <p class="subTitle">PARIS</p>
+            </div>
+            <i data-feather="briefcase" class="bag"></i>
+        </div><!--header-top-->
+        <div class="header-bottom">
+            <form method="get" action="#" class="search_container open-btn">
+                <input type="text" placeholder="何をお探しですか？">
+                <i class="fa fa-search" id="open-btn-search"></i>
+                <i data-feather="x" class="close-btn-x"></i>
+            </form>
+        </div>
+            <!--検索部分クリックした後の画面
+            <nav class="open-nav">
+                <h4 class="open-nav-title">Suggestions</h4>
+                <ul>
+                    <li><a href="#"></a>HOTEL OLYMPIA</li>
+                    <li><a href="#"></a>New In</li>
+                    <li><a href="#"></a>Chillax Cat</li>
+                    <li><a href="#"></a>Dressed Cat</li>
+                    <li><a href="#"></a>Cat Head</li>
+                </ul>
+            </nav>-->
+    </header>
     <div class="heroWrap">
         <div class="hero">
             <img class="heroImage" src="./assets/images/hero1.jpg">
@@ -154,14 +246,15 @@
     <section class="selection">
         <div class="selection-top">
             <p class="title">SELECTION</p>
-            <div class="arrow-wrap">
+            <!--サイトがアップデートされたからいらないかも、、-->
+            <!--div class="arrow-wrap">
                 <div class="arrow-left">
                 <button class="arrow-btn js-btn-back" type="button"></button>
                 </div>
                 <div class="arrow-right">
                 <button class="arrow-btn js-btn-next" type="button"></button>
                 </div>
-            </div>
+            </div-->
         </div>
             <ul class="shopItemList selection-slider">
                 <li class="shopItem">

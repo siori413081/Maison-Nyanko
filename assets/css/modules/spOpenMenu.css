@@ -14,33 +14,127 @@
 @media screen and (max-width: 768px) {
     /* SP style */
 
-.hamburger-menu-btn.active{
-
-}
-
 .sp-open-menu{
     position: fixed;
     z-index: 999;
     top: 0;
-    left: 120%;
+    right: 120%;
     width: 100%;
     height: 100vh;
+    padding: 20px;
     background-color: #fff;
     transition: all 0.6s;
 }
 
 .sp-open-menu.active{
-    left: 0;
+    right: 0;
 }
 
-.sp-open-menu ul{
+.sp-open-menu-top{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+
+}
+
+.sp-tab ul{
+    display: flex;
+    margin-bottom: 40px;
     z-index: 999;
 }
 
-.sp-open-menu li{
+.sp-tab li{
+    color: #9C9C9C;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sp-tab li.active{
     color: #000;
-    font-size: 16px;
+    border-bottom: 1px solid #000;
+}
+
+.sp-tab li:last-child{
+    margin-right: 0;
+}
+
+.sp-panel{
+    display: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sp-panel.active{
+    display: block;
+}
+
+.sp-panel-border{
+    border-bottom: 1px solid #000;
+}
+
+.sp-panel ul{
+    line-height: 2.5;
+}
+
+.sp-panel li{
+    cursor: pointer;
+}
+
+.sp-close-x{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.sp-close-x::before,.sp-close-x::after{/*共通*/
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;/*棒の太さ*/
+    height: 20px;/*棒の高さ ✕の大きさ的な？*/
+    background: #000;
+}
+
+.sp-close-x::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.sp-close-x::after{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.sp-item{
+    line-height: 2.5;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.sp-item a{
+    font-size: 12px;
+    text-decoration:none;
+    color: #000;
+}
+
+.sp-select{
+    display: flex;
+}
+
+.sp-country p{
+    font-size: 12px;
+    padding: 2px 15px 2px 0;
+}
+
+.sp-language p{
+    font-size: 12px;
+    border-left: 1px solid #000;
+    padding: 2px 15px;
 }
 
 }

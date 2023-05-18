@@ -107,27 +107,48 @@ $(function(){
 /*ハンバーガーメニューをクリックした後のメニュー表示 */
 $(function(){
     $('.hamburger-menu-btn').click(function(){
-        $(this).addClass('active');
         $('.sp-open-menu').addClass('active');
     });
 });
 
 /*ハンバーガーメニューを閉じる */
 $(function(){
-    $('.sp-open-menu a').click(function () {
-        $('.hamburger-menu-btn').removeClass('active');
-        $('.sp-open-menu a').removeClass('active');
+    $('.sp-close-x').click(function () {
+        $('.sp-open-menu').removeClass('active');
     });
 });
 
-/* selection スライダー */
+/*ハンバーガーメニューの中身 */
+/*ハンバーガーメニューの中身 タイトルクリック*/
+$(function(){
+    $('.sp-tab li').click(function(){
+        $('.sp-tab li,.sp-panel').removeClass('active');
+
+        $(this).addClass('active');
+        
+        let index = $('.sp-tab li').index(this);
+        $('.sp-panel').eq(index).addClass('active');
+    });
+});
+
+/*ハンバーガーメニューの中身　パネルの下線 */
+$(function(){
+    $('.sp-panel li').mouseover(function(){
+        $(this).addClass('sp-panel-border');
+    });
+    $('.sp-panel li').mouseout(function(){
+        $(this).removeClass('sp-panel-border');
+    });
+});
+
+/* selection SP スライダー */
 $(function(){
     w = $(window).width();
     if ( w <= 769 ){
         //SP対応（760px以下の時）
         $('.selection-slider').slick({
             autoplay: false,//自動的に動き出すか。初期値はfalse。
-            infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+            infinite: false,//スライドをループさせるかどうか。初期値はtrue。
             slidesToShow: 2,//スライドを画面に3枚見せる
             slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
             arrows: false,//ボタンなし
@@ -138,7 +159,7 @@ $(function(){
     }
 });
 
-/* service スライダー */
+/* service SP スライダー */
 $(function(){
 w = $(window).width();
 if ( w <= 768 ){
@@ -155,3 +176,31 @@ if ( w <= 768 ){
         $('.service-slider').slick('unslick');
     }
 });
+
+/* service SP 傾ける */
+$(function(){
+    $('.boutique').mouseover(function(){
+        $(this).addClass('active');
+    });
+    $('.boutique').mouseout(function(){
+        $(this).removeClass('active');
+    });
+})
+
+$(function(){
+    $('.cafe').mouseover(function(){
+        $(this).addClass('active');
+    });
+    $('.cafe').mouseout(function(){
+        $(this).removeClass('active');
+    });
+})
+
+$(function(){
+    $('.musique').mouseover(function(){
+        $(this).addClass('active');
+    });
+    $('.musique').mouseout(function(){
+        $(this).removeClass('active');
+    });
+})
