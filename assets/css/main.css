@@ -2,7 +2,6 @@
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/common.css');
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/header.css');
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/searchForm.css');
-@import url('https://siori413081.github.io/portfolio1/assets/css/modules/openNav.css');
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/spOpenMenu.css');
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/modal.css');
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/hero.css');
@@ -10,12 +9,12 @@
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/selection.css');
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/service.css');
 @import url('https://siori413081.github.io/portfolio1/assets/css/modules/footer.css');
+@import url('https://siori413081.github.io/portfolio1/assets/css/modules/jQuery.css');
 
 /*
 @import url('./modules/common.css');
 @import url('./modules/header.css');
 @import url('./modules/searchForm.css');
-@import url('./modules/openNav.css');
 @import url('./modules/spOpenMenu.css');
 @import url('./modules/modal.css');
 @import url('./modules/hero.css');
@@ -23,4 +22,5 @@
 @import url('./modules/selection.css');
 @import url('./modules/service.css');
 @import url('./modules/footer.css');
+@import url('./modules/jQuery.css');
 */

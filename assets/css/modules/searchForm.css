@@ -5,7 +5,9 @@
     /* PC style */
 
 .search_container{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 2px solid #000;
     height: 80px;
     width: 500px;
@@ -20,10 +22,42 @@
     outline : none;
 }
 
-.fa{
+.fa-search{
+    transform: translate(-50%);
+}
+
+.fa-search.active{
+    display: none;
+}
+
+.bottom-close-x{
+    display: none;
+}
+
+.bottom-close-x.active{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bottom-close-x::before,.bottom-close-x::after{
+    content: "";
     position: absolute;
-    right: 10px;
     top: 50%;
+    left: 50%;
+    width: 2px;/*棒の太さ*/
+    height: 20px;/*棒の高さ ✕の大きさ的な？*/
+    background: #000;
+}
+
+.bottom-close-x::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.bottom-close-x::after{
+    transform: translate(-50%,-50%) rotate(-45deg);
 }
 
 }
@@ -48,6 +82,40 @@
 
 .search_container input[type="text"]:focus {
     outline : none;
+}
+
+.fa-search.active{
+    display: none;
+}
+
+.bottom-close-x{
+    display: none;
+}
+
+.bottom-close-x.active{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bottom-close-x::before,.bottom-close-x::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;/*棒の太さ*/
+    height: 20px;/*棒の高さ ✕の大きさ的な？*/
+    background: #000;
+}
+
+.bottom-close-x::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.bottom-close-x::after{
+    transform: translate(-50%,-50%) rotate(-45deg);
 }
 
 }

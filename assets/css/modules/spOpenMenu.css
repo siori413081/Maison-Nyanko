@@ -15,10 +15,10 @@
     /* SP style */
 
 .sp-open-menu{
-    position: fixed;
+    position: absolute;
     z-index: 999;
     top: 0;
-    right: 120%;
+    left: -120%;
     width: 100%;
     height: 100vh;
     padding: 20px;
@@ -27,12 +27,13 @@
 }
 
 .sp-open-menu.active{
-    right: 0;
+    left: 0;
 }
 
 .sp-open-menu-top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50px;
 
@@ -89,7 +90,7 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .sp-close-x::before,.sp-close-x::after{/*共通*/

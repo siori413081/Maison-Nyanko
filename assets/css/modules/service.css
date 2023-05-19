@@ -87,7 +87,7 @@
 
 
 .slick-list{
-    padding: 0 10% 0 10% !important;/*前後のスライドチラ見せ*/
+    padding: 50px 10% 50px 10% !important;/*前後のスライドチラ見せ*/
 }
 
 .slick-slide{

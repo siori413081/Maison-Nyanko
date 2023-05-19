@@ -104,6 +104,8 @@
 }
 
 .country,.user{
+    display: flex;
+    align-items: center;
     margin-right: 30px;
     cursor: pointer;
 }
@@ -126,6 +128,35 @@
     cursor: pointer;
 }
 
+.bottom-menu{
+    position: fixed;
+    bottom: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    background-color: #fff;
+    transition: all 0.6s;
+}
+
+.bottom-menu.active{
+    top: 80px;
+    bottom: 0;
+}
+
+.bottom-menu ul{
+    line-height: 3;
+}
+
+.bottom-menu li{
+    font-size: 12px;
+    color: #000;
+}
+
+.bottom-menu li:first-child{
+    color: #999;
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -142,6 +173,8 @@
 .header-top{
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,10 +237,6 @@
     display: none;
 }
 
-.bag{
-    margin-right: 20px;
-}
-
 .header-bottom{
     position: absolute;
     top: 70px;
@@ -215,6 +244,35 @@
     height: 50px;
     background-color: #fff;
     padding: 0 10px;
+}
+
+.bottom-menu{
+    position: fixed;
+    bottom: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    background-color: #fff;
+    transition: all 0.6s;
+}
+
+.bottom-menu.active{
+    top: 150px;
+    bottom: 0;
+}
+
+.bottom-menu ul{
+    line-height: 3;
+}
+
+.bottom-menu li{
+    font-size: 12px;
+    color: #000;
+}
+
+.bottom-menu li:first-child{
+    color: #999;
 }
 
 

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+/*下からふわっ*/
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1.7s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+@keyframes fadeUpAnime{
+    from {
+    opacity: 0;
+    transform: translateY(100px);
+    }
+
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    }
+
+/*service部分、スクロールするまで透過*/
+.box{
+    opacity: 0;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1.7s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+@keyframes fadeUpAnime{
+    from {
+    opacity: 0;
+    transform: translateY(100px);
+    }
+
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    }
+
+}

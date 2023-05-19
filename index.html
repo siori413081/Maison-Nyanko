@@ -6,11 +6,12 @@
     <title>Maison Nyanko</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="favicon.ico">
     <link rel='stylesheet' href='./assets/css/reset.css'>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <!--link rel='stylesheet' href='./assets/css/main.css'--><!--コメントアウトで切り替え-->
     <link rel='stylesheet' href='https://siori413081.github.io/portfolio1/assets/css/main.css'>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
 <div class="wrapper">
@@ -40,22 +41,11 @@
                 <h1 class="mainTitle">MAISON NYANKO</h1>
                 <p class="subTitle">PARIS</p>
             </div>
-            <form method="get" action="#" class="search_container open-btn">
+            <form method="get" action="#" class="search_container">
                 <input type="text" placeholder="何をお探しですか？">
-                <i class="fa fa-search" id="open-btn-search"></i>
-                <i data-feather="x" class="close-btn-x"></i>
+                <i class="fas fa-search"></i>
+                <div class="bottom-close-x"></div>
             </form>
-            <!--検索部分クリックした後の画面
-            <nav class="open-nav">
-                <h4 class="open-nav-title">Suggestions</h4>
-                <ul>
-                    <li><a href="#"></a>HOTEL OLYMPIA</li>
-                    <li><a href="#"></a>New In</li>
-                    <li><a href="#"></a>Chillax Cat</li>
-                    <li><a href="#"></a>Dressed Cat</li>
-                    <li><a href="#"></a>Cat Head</li>
-                </ul>
-            </nav>-->
         </div><!--header-top-->
         <!--jQueryでhover後のメニュー-->
         <div class="header-middle">
@@ -98,6 +88,7 @@
             </div><!--panel-area-->
                     <ul class="header-item">
                         <div class="country">
+                            <i class="fas fa-money-bill-wave-alt"></i>
                             <i data-feather="chevron-down" class="country-arrow"></i>
                         </div>
                         <div class="language">
@@ -135,6 +126,16 @@
                 <button type="button" class="modal-close"><i data-feather="x"></i></button>
             </div>
     </header>
+        <div class="bottom-menu"><!--検索押したら開くメニュー-->
+            <ul>
+                <li>Suggestions</li>
+                <li>HOTEL OLIMIPIA</li>
+                <li>New In</li>
+                <li>Chillax Cat</li>
+                <li>Dressed Cat</li>
+                <li>Cat Head</li>
+            </ul>
+        </div>
     <header class="header-sp">
         <div class="header-top">
             <div class="hamburger-menu">
@@ -143,7 +144,7 @@
                 <!--ハンバーガーメニュークリックしたあとのメニュー-->
                 <div class="sp-open-menu">
                     <div class="sp-open-menu-top">
-                        <i data-feather="github" class="cat"></i>
+                        <i class="fas fa-cat"></i>
                         <span class="sp-close-x"></span>
                     </div>
                     <div class="sp-tab">
@@ -211,32 +212,21 @@
         <div class="header-bottom">
             <form method="get" action="#" class="search_container open-btn">
                 <input type="text" placeholder="何をお探しですか？">
-                <i class="fa fa-search" id="open-btn-search"></i>
-                <i data-feather="x" class="close-btn-x"></i>
+                <i class="fas fa-search"></i>
+                <div class="bottom-close-x"></div>
             </form>
         </div>
-            <!--検索部分クリックした後の画面
-            <nav class="open-nav">
-                <h4 class="open-nav-title">Suggestions</h4>
-                <ul>
-                    <li><a href="#"></a>HOTEL OLYMPIA</li>
-                    <li><a href="#"></a>New In</li>
-                    <li><a href="#"></a>Chillax Cat</li>
-                    <li><a href="#"></a>Dressed Cat</li>
-                    <li><a href="#"></a>Cat Head</li>
-                </ul>
-            </nav>-->
     </header>
     <div class="heroWrap">
         <div class="hero">
-            <img class="heroImage" src="./assets/images/hero1.jpg">
+            <img class="heroImage fadeUp" src="./assets/images/hero1.jpg">
             <div class="discover">
                 <p>DISCOVER</p>
                 <i data-feather="arrow-right" class="hero-arrow-right"></i>
             </div>
         </div>
         <div class="hero">
-            <img class="heroImage" src="./assets/images/hero2.jpg">
+            <img class="heroImage fadeUp" src="./assets/images/hero2.jpg">
             <div class="discover">
                 <p>DISCOVER</p>
                 <i data-feather="arrow-right" class="hero-arrow-right"></i>
@@ -284,18 +274,18 @@
                 </li>
             </ul>
     </section>
-    <section class="service service-slider">
-                <div class="boutique-item">
+    <section class="service service-slider delayScroll">
+                <div class="boutique-item box">
                     <div class="boutique"></div>
                     <p class="boutiqueTitle">BOUTIQUE</p>
                     <img class="serviceImage" src="./assets/images/boutique.jpg">
                 </div>
-                <div class="cafe-item">
+                <div class="cafe-item box">
                     <div class="cafe"></div>
                     <p class="cafeTitle">CAFE</p>
                     <img class="serviceImage" src="./assets/images/cafe.jpg">
                 </div>
-                <div class="musique-item">
+                <div class="musique-item box">
                     <div class="musique"></div>
                     <p class="musiqueTitle">MUSIQUE</p>
                     <img class="serviceImage" src="./assets/images/musique.jpg">
