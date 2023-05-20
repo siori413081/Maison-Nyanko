@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+/*header*/
+.bottom-menu{
+    position: fixed;
+    bottom: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    background-color: #fff;
+    transition: all 0.6s;
+    z-index: 999;
+}
+
+.bottom-menu.active{
+    top: 80px;
+    bottom: 0;
+}
+
+.bottom-menu ul{
+    line-height: 3;
+}
+
+.bottom-menu li{
+    font-size: 12px;
+    color: #000;
+}
+
+.bottom-menu li:first-child{
+    color: #999;
+}
+
+/*user-menu*/
+
+.user-menu-x{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.user-menu-x::before,.user-menu-x::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;/*棒の太さ*/
+    height: 30px;/*棒の高さ ✕の大きさ的な？*/
+    background: #808080;
+}
+
+.user-menu-x::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.user-menu-x::after{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.user-menu{
+    position: absolute;
+    top: 0;
+    right: -120%;
+    width: 500px;
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+.user-menu.active{
+    right: 0;
+}
+
+.user-menu h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.account{
+    font-size: 16px;
+    padding: 30px 0;
+}
+
+.mail{
+    font-size: 16px;
+}
+
+.pass{
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.mail-box,.pass-box{
+    width: 460px;
+    font-size: 17px;
+    border: 1px solid #a9a9a9;
+    padding: 10px;
+    color: #a9a9a9;
+}
+
+.pass-forget{
+    font-size: 12px;
+    border-bottom: 1px solid #000;
+}
+
+.pass-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.login{
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.login-go{
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.login-box{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #808080;
+    cursor: pointer;
+}
+
+.login-box.active{
+    border: 2px solid #000;
+}
+
+.login-box p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.sns{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.f{
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4867AA;
+    cursor: pointer;
+}
+
+.g{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #D93025;
+    cursor: pointer;
+}
+
+.line{
+    border: 1px solid #000;
+    margin: 30px auto;
+    width: 200px;
+    text-align: center;
+}
+
+.new-user{
+    font-size: 14px;
+    padding: 30px 0;
+}
+
+.account-box{
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.opacity{
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    opacity: 0.3;
+    z-index: 900;
+}
+
+.opacity.active{
+    right: 0;
+}
+
+/*カートの中*/
+.bag-in{
+    position: absolute;
+    top: 0;
+    right: -120%;
+    background-color: #fff;
+    width: 500px;
+    height: 100vh;
+    transition: all 0.7s;
+}
+
+.bag-in.active{
+    right: 0;
+    z-index: 999;
+}
+
+.bag-in h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.bag-bottom{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    padding: 10px;
+    border-top: 1px solid #e6e6e6;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+
+/*header*/
+.bottom-menu{
+    position: fixed;
+    bottom: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    background-color: #fff;
+    transition: all 0.6s;
+    z-index: 999;
+}
+
+.bottom-menu.active{
+    top: 150px;
+    bottom: 0;
+}
+
+.bottom-menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+.bottom-menu ul{
+    line-height: 3;
+}
+
+.bottom-menu li{
+    font-size: 12px;
+    color: #000;
+}
+
+.bottom-menu li:first-child{
+    color: #999;
+}
+
+/*カートの中*/
+.bag-in{
+    position: absolute;
+    top: 0;
+    right: -120%;
+    background-color: #fff;
+    width: 500px;
+    height: 100vh;
+    transition: all 0.7s;
+}
+
+.bag-in.active{
+    right: 0;
+    z-index: 999;
+}
+
+.bag-in h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.bag-bottom{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    padding: 10px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.opacity{
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    opacity: 0.3;
+    z-index: 900;
+}
+
+.opacity.active{
+    right: 0;
+}
+
+}

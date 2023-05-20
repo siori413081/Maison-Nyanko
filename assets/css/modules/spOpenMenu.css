@@ -138,4 +138,9 @@
     padding: 2px 15px;
 }
 
+.sp-bottom{
+    position: absolute;
+    bottom: 65px;
+}
+
 }

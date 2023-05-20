@@ -64,7 +64,6 @@ transform: translate(-70%, -50%)rotate(135deg);
 
 .shopItemList{
     display: flex;
-    width: 1700px;
     margin:0 auto;
 }
 
@@ -75,6 +74,10 @@ transform: translate(-70%, -50%)rotate(135deg);
 
 .shopItem:first-child{
     margin-left: 0;
+}
+
+.shopItem:last-child{
+    display: none;
 }
 
 .shopItemImage{

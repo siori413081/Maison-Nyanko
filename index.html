@@ -19,27 +19,15 @@
         <div class="header-top">
             <nav class="navigation">
                 <ul class="tab-area">
-                    <li class="tab active">MAISON NYANKO</li>
-                    <li class="tab">CAFE NYANKO</li>
-                    <li class="tab">NYANKO MUSIQUE</li>
-                    <li class="tab">GALERIE NYANKO</li>
-                </ul>
-            </nav>
-            <div class="hamburger-menu">
-                <label for="menu-btn-check" class="hamburger-menu-btn"><span></span></label>
-            </div>
-            <!--ハンバーガーメニュークリックしたあとのメニュー-->
-            <nav class="sp-open-menu">
-                <ul>
-                    <li><a href="#"></a>MAISON NYANKO</li>
-                    <li><a href="#"></a>CAFE NYANKO</li>
-                    <li><a href="#"></a>NYANKO MUSIQUE</li>
-                    <li><a href="#"></a>GALERIE NYANKO</li>
+                    <li class="tab active"><a href="#">MAISON NYANKO</a></li>
+                    <li class="tab"><a href="#">CAFE NYANKO</a></li>
+                    <li class="tab"><a href="#">NYANKO MUSIQUE</a></li>
+                    <li class="tab"><a href="#">GALERIE NYANKO</a></li>
                 </ul>
             </nav>
             <div class="titleBox">
-                <h1 class="mainTitle">MAISON NYANKO</h1>
-                <p class="subTitle">PARIS</p>
+                <h1 class="mainTitle"><a href="#">MAISON NYANKO</a></h1>
+                <p class="subTitle"><a href="#">PARIS</a></p>
             </div>
             <form method="get" action="#" class="search_container">
                 <input type="text" placeholder="何をお探しですか？">
@@ -52,53 +40,93 @@
             <div class="panel-area">
                 <div class="panel active">
                     <ul class="panel-list">
-                        <li>HOTEL</li>
-                        <li>NEW</li>
-                        <li>メンズ</li>
-                        <li>レディース</li>
-                        <li>アクセサリー</li>
-                        <li>オブジェクト</li>
-                        <li>日本限定商品</li>
-                        <li>コラボレーション</li>
-                        <li>ブランドについて</li>
+                        <li><a href="#">HOTEL</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">メンズ</a></li>
+                        <li><a href="#">レディース</a></li>
+                        <li><a href="#">アクセサリー</a></li>
+                        <li><a href="#">オブジェクト</a></li>
+                        <li><a href="#">日本限定商品</a></li>
+                        <li><a href="#">コラボレーション</a></li>
+                        <li><a href="#">ブランドについて</a></li>
                     </ul>
                 </div>
                 <div class="panel">
                     <ul class="panel-list">
-                        <li>SHOP</li>
-                        <li>LOCATION</li>
-                        <li>ABOUT</li>
-                        <li>EVENTS</li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">LOCATION</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">EVENTS</a></li>
                     </ul>
                 </div>
                 <div class="panel">
                     <ul class="panel-list">
-                        <li>ARTISTS</li>
-                        <li>ARTWORKS</li>
-                        <li>EVENTS</li>
+                        <li><a href="#">ARTISTS</a></li>
+                        <li><a href="#">ARTWORKS</a></li>
+                        <li><a href="#">EVENTS</a></li>
                     </ul>
                 </div>
                 <div class="panel"$()>
                     <ul class="panel-list">
-                        <li>EXHIBITIONS</li>
-                        <li>LIBRARIE</li>
-                        <li>ABOUT</li>
+                        <li><a href="#">EXHIBITIONS</a></li>
+                        <li><a href="#">LIBRARIE</a></li>
+                        <li><a href="#">ABOUT</a></li>
                     </ul>
                 </div>
             </div><!--panel-area-->
                     <ul class="header-item">
                         <div class="country">
                             <i class="fas fa-money-bill-wave-alt"></i>
-                            <i data-feather="chevron-down" class="country-arrow"></i>
+                            <div class="country-arrow"></div>
                         </div>
                         <div class="language">
                             <p>JP</p>
-                            <i data-feather="chevron-down"></i>
+                            <div class="language-arrow"></div>
                         </div>
                         <i data-feather="user" class="user"></i>
                         <i data-feather="briefcase" class="bag"></i>
                     </ul>
         </div><!--header-middle-->
+        <!--ユーザー情報-->
+        <div class="user-menu">
+            <div class="user-menu-x"></div>
+            <h3>既にご登録いただいているお客様</h3>
+            <p class="account">アカウントにログイン</p>
+            <p class="mail">メールアドレス*</p>
+            <input type="text" placeholder="メールアドレス" class="mail-box">
+            <p class="pass">パスワード*</p>
+            <input type="text" placeholder="パスワード" class="pass-box">
+            <div class="pass-login">
+                <p class="pass-forget">パスワードをお忘れの方はこちら</p>
+                <div class="login">ログイン</div>
+            </div>
+            <p class="login-go">こちらからもログインいただけます：</p>
+            <div class="login-box">
+                <p>パスワードを使用せずログイン</p>
+            </div>
+            <div class="sns">
+                <div class="f">f</div>
+                <div class="g">G</div>
+            </div>
+            <div class="line"></div>
+            <h3>新規登録のお客様</h3>
+            <p class="new-user">
+                アカウントを作成していただくとこちらの機能をご利用いただけます：<br>
+                - お客様のデータを保存して、オーダーのお手続きを簡単に完了できます。<br>
+                - オーダー状況やオーダ履歴をご確認いただけます。<br>
+                - バースデー割引価格や、セール期間中にセール価格でお買いものいただけます。
+            </p>
+            <p class="account-box">アカウントを作成する</p>
+        </div>
+        <!--カートの中身-->
+        <div class="bag-in">
+            <div>
+                <h3>お客様のカートは空です</h3>
+                <p class="bag-bottom">
+                    サポートが必要ですか？ オンラインストア専用カスタマーサービス 0120-915-666*土日祝日年末年始を除く11:00-17:00JP—SUPPORT@MAISONNYANKO.JP
+                </p>
+            </div>
+        </div>
         <!--modal画面の中身-->
         <div class="modal" style="display: none;">
             <div class="modal-content">
@@ -129,11 +157,11 @@
         <div class="bottom-menu"><!--検索押したら開くメニュー-->
             <ul>
                 <li>Suggestions</li>
-                <li>HOTEL OLIMIPIA</li>
-                <li>New In</li>
-                <li>Chillax Cat</li>
-                <li>Dressed Cat</li>
-                <li>Cat Head</li>
+                <li><a href="#">HOTEL OLIMIPIA</a></li>
+                <li><a href="#">New In</a></li>
+                <li><a href="#">Chillax Cat</a></li>
+                <li><a href="#">Dressed Cat</a></li>
+                <li><a href="#">Cat Head</a></li>
             </ul>
         </div>
     <header class="header-sp">
@@ -149,65 +177,69 @@
                     </div>
                     <div class="sp-tab">
                         <ul>
-                            <li class="active"><a href="#"></a>MAISON NYANKO</li>
-                            <li><a href="#"></a>CAFE NYANKO</li>
-                            <li><a href="#"></a>NYANKO MUSIQUE</li>
-                            <li><a href="#"></a>GALERIE NYANKO</li>
+                            <li class="active"><a href="#">MAISON NYANKO</a></li>
+                            <li><a href="#">CAFE NYANKO</a></li>
+                            <li><a href="#">NYANKO MUSIQUE</a></li>
+                            <li><a href="#">GALERIE NYANKO</a></li>
                         </ul>
                     </div>
                     <div class="sp-panel active">
                         <ul>
-                            <li>HOTEL OLYMPIA</li>
-                            <li>NEW</li>
-                            <li>MEN</li>
-                            <li>WOMEN</li>
-                            <li>ACCESSORIES</li>
-                            <li>OBJECTS</li>
-                            <li>JAPAN EXCLUSIVE</li>
-                            <li>COLLABS</li>
-                            <li>ABOUT</li>
+                            <li><a href="#">HOTEL OLYMPIA</a></li>
+                            <li><a href="#">NEW</a></li>
+                            <li><a href="#">MEN</a></li>
+                            <li><a href="#">WOMEN</a></li>
+                            <li><a href="#">ACCESSORIES</a></li>
+                            <li><a href="#">OBJECTS</a></li>
+                            <li><a href="#">JAPAN EXCLUSIVE</a></li>
+                            <li><a href="#">COLLABS</a></li>
+                            <li><a href="#">ABOUT</a></li>
                         </ul>
                     </div>
                     <div class="sp-panel">
                         <ul>
-                            <li>SHOP</li>
-                            <li>LOCATIONS</li>
-                            <li>ABOUT</li>
-                            <li>EVENTS</li>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="#">LOCATIONS</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">EVENTS</a></li>
                         </ul>
                     </div>
                     <div class="sp-panel">
                         <ul>
-                            <li>ARTISTS</li>
-                            <li>ARTWORKS</li>
-                            <li>EVENTS</li>
+                            <li><a href="#">ARTISTS</a></li>
+                            <li><a href="#">ARTWORKS</a></li>
+                            <li><a href="#">EVENTS</a></li>
                         </ul>
                     </div>
                     <div class="sp-panel">
                         <ul>
-                            <li>EXHIBITIONS</li>
-                            <li>LIBRARIE</li>
-                            <li>ABOUT</li>
+                            <li><a href="#">EXHIBITIONS</a></li>
+                            <li><a href="#">LIBRARIE</a></li>
+                            <li><a href="#">ABOUT</a></li>
                         </ul>
                     </div>
-                    <div class="sp-item">
-                        <p><a href="#">My Account</a></p>
-                        <p><a href="#">Newsletter</a></p>
-                    </div>
-                    <div class="sp-select">
-                        <div class="sp-country">
-                            <p>Ship to</p>
+                    <div class="sp-bottom">
+                        <div class="sp-item">
+                            <p><a href="#">My Account</a></p>
+                            <p><a href="#">Newsletter</a></p>
                         </div>
-                        <div class="sp-language">
-                            <p>Language</p>
+                        <div class="sp-select">
+                            <div class="sp-country">
+                                <p>Ship to</p>
+                            </div>
+                            <div class="sp-language">
+                                <p>Language</p>
+                            </div>
                         </div>
-                    </div>
-                </div><!--so-open-menu-->
+                    </div><!--sp-bottom-->
+                </div><!--sp-open-menu-->
             <div class="titleBox">
-                <h1 class="mainTitle">MAISON NYANKO</h1>
-                <p class="subTitle">PARIS</p>
+                <h1 class="mainTitle"><a href="#">MAISON NYANKO</a></h1>
+                <p class="subTitle"><a href="#">PARIS</a></p>
             </div>
-            <i data-feather="briefcase" class="bag"></i>
+            <a href="#">
+                <i data-feather="briefcase" class="bag"></i>
+            </a>
         </div><!--header-top-->
         <div class="header-bottom">
             <form method="get" action="#" class="search_container open-btn">
@@ -217,25 +249,43 @@
             </form>
         </div>
     </header>
+    <!--カートの中身-->
+    <div class="bag-in">
+        <div>
+            <h3>お客様のカートは空です</h3>
+            <p class="bag-bottom">
+                サポートが必要ですか？ オンラインストア専用カスタマーサービス 0120-915-666*土日祝日年末年始を除く11:00-17:00JP—SUPPORT@MAISONNYANKO.JP
+            </p>
+        </div>
+    </div>
+    <div class="opacity"></div>
     <div class="heroWrap">
         <div class="hero">
-            <img class="heroImage fadeUp" src="./assets/images/hero1.jpg">
-            <div class="discover">
-                <p>DISCOVER</p>
-                <i data-feather="arrow-right" class="hero-arrow-right"></i>
-            </div>
+            <a href="#">
+                <img class="heroImage fadeUp" src="./assets/images/hero1.jpg">
+            </a>
+            <a href="#">
+                <div class="discover">
+                        <p>DISCOVER</p>
+                        <i data-feather="arrow-right" class="hero-arrow-right"></i>
+                </div>
+            </a>
         </div>
         <div class="hero">
-            <img class="heroImage fadeUp" src="./assets/images/hero2.jpg">
-            <div class="discover">
-                <p>DISCOVER</p>
-                <i data-feather="arrow-right" class="hero-arrow-right"></i>
-            </div>
+            <a href="#">
+                <img class="heroImage fadeUp" src="./assets/images/hero2.jpg">
+            </a>
+            <a href="#">
+                <div class="discover">
+                    <p>DISCOVER</p>
+                    <i data-feather="arrow-right" class="hero-arrow-right"></i>
+                </div>
+            </a>
         </div>
     </div>
     <section class="selection">
         <div class="selection-top">
-            <p class="title">SELECTION</p>
+            <p class="title fadeUpTrigger">SELECTION</p>
             <!--サイトがアップデートされたからいらないかも、、-->
             <!--div class="arrow-wrap">
                 <div class="arrow-left">
@@ -246,7 +296,7 @@
                 </div>
             </div-->
         </div>
-            <ul class="shopItemList selection-slider">
+            <ul class="shopItemList selection-slider fadeUpTrigger">
                 <li class="shopItem">
                     <img class="shopItemImage" src="./assets/images/selection.jpg">
                     <p class="itemName">メゾン ニャンコ シャツ</p>

@@ -24,6 +24,7 @@
 
 .fa-search{
     transform: translate(-50%);
+    cursor: pointer;
 }
 
 .fa-search.active{
@@ -82,6 +83,10 @@
 
 .search_container input[type="text"]:focus {
     outline : none;
+}
+
+.fa-search{
+    cursor: pointer;
 }
 
 .fa-search.active{

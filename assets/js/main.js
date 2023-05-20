@@ -25,10 +25,12 @@ $(function(){
 /* modal画面の表示 */
 $(function(){
     $('.country-arrow').click(function(){
+        $(this).addClass('active');
         $('.modal').fadeTo(500,0.7);
     });
 
     $('.modal-close').click(function(){
+        $(this).removeClass('active');
         $('.modal').fadeOut(700);
     });
 });
@@ -90,7 +92,7 @@ $(function(){
 
 /*検索部分をクリックした後の画面表示*/
 $(function(){
-    $('.search_container').click(function(){
+    $('.search_container').focusin(function(){
         $('.bottom-menu').addClass('active');
         $('.fa-search').addClass('active');
         $('.bottom-close-x').addClass('active');
@@ -245,3 +247,81 @@ function delayScrollAnime() {
 	$(window).scroll(function (){
 		delayScrollAnime();/* アニメーション用の関数を呼ぶ*/
 	});// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+    function fadeAnime(){
+
+//ふわっと動くきっかけのクラス名と動きのクラス名の設定
+$('.fadeUpTrigger').each(function(){ //fadeInUpTriggerというクラス名が
+    var elemPos = $(this).offset().top-100; //要素より、100px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+    $(this).addClass('fadeUp');
+    // 画面内に入ったらfadeInというクラス名を追記
+    }
+    });
+
+//関数でまとめることでこの後に違う動きを追加することが出来ます
+$('.fadeDownTrigger').each(function(){ //fadeInDownTriggerというクラス名が
+    var elemPos = $(this).offset().top-100; //要素より、100px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+    $(this).addClass('fadeDown');
+    // 画面内に入ったらfadeDownというクラス名を追記
+    }
+    });
+
+
+}//ここまでふわっと動くきっかけのクラス名と動きのクラス名の設定
+
+// 画面をスクロールをしたら動かしたい場合の記述
+    $(window).scroll(function (){
+    fadeAnime();/* アニメーション用の関数を呼ぶ*/
+    });// 
+
+
+$(function(){
+    $('.country-arrow').click(function(){
+        $(this).removeClass('country-arrow')
+        $(this).addClass('country-arrow-active')
+    });
+});
+
+/*user-menu */
+$(function(){
+    $('.user').click(function(){
+        $('.user-menu').addClass('active');
+        $('.opacity').addClass('active');
+    });
+});
+
+$(function(){
+    $('.user-menu-x').click(function(){
+        $('.user-menu').removeClass('active');
+        $('.opacity').removeClass('active');
+    });
+});
+
+$(function(){
+    $('.login-box').mouseover(function(){
+        $(this).addClass('active');
+    });
+
+    $('.login-box').mouseout(function(){
+        $(this).removeClass('active');
+    });
+});
+
+/*bag */
+$(function(){
+    $('.bag').click(function(){
+        $('.bag-in').addClass('active');
+        $('.opacity').addClass('active');
+    });
+
+    $('.opacity').click(function(){
+       $('.bag-in').removeClass('active');
+       $('.opacity').removeClass('active');
+    });
+});
