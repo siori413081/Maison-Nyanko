@@ -89,6 +89,7 @@
 
 .fa-search{
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .fa-search.active{

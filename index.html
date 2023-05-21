@@ -77,11 +77,20 @@
                     <ul class="header-item">
                         <div class="country">
                             <i class="fas fa-money-bill-wave-alt"></i>
-                            <div class="country-arrow"></div>
+                            <i data-feather="chevron-down" class="country-arrow"></i>
                         </div>
                         <div class="language">
-                            <p>JP</p>
-                            <div class="language-arrow"></div>
+                            <div class="language-btn">
+                                <p>JP</p>
+                                <i data-feather="chevron-down" class="language-arrow"></i>
+                            </div>
+                            <!--言語切り替え-->
+                            <div class="language-menu">
+                                <ul>
+                                    <li>JP</li>
+                                    <li>EN</li>
+                                </ul>
+                            </div>
                         </div>
                         <i data-feather="user" class="user"></i>
                         <i data-feather="briefcase" class="bag"></i>
@@ -97,7 +106,7 @@
             <p class="pass">パスワード*</p>
             <input type="text" placeholder="パスワード" class="pass-box">
             <div class="pass-login">
-                <p class="pass-forget">パスワードをお忘れの方はこちら</p>
+                <p class="pass-forget"><a href="#">パスワードをお忘れの方はこちら</a></p>
                 <div class="login">ログイン</div>
             </div>
             <p class="login-go">こちらからもログインいただけます：</p>
@@ -123,7 +132,7 @@
             <div>
                 <h3>お客様のカートは空です</h3>
                 <p class="bag-bottom">
-                    サポートが必要ですか？ オンラインストア専用カスタマーサービス 0120-915-666*土日祝日年末年始を除く11:00-17:00JP—SUPPORT@MAISONNYANKO.JP
+                    サポートが必要ですか？ オンラインストア専用カスタマーサービス 0120-915-666*土日祝日年末年始を除く11:00-17:00JP-SUPPORT@MAISONNYANKO.JP
                 </p>
             </div>
         </div>
@@ -298,47 +307,63 @@
         </div>
             <ul class="shopItemList selection-slider fadeUpTrigger">
                 <li class="shopItem">
-                    <img class="shopItemImage" src="./assets/images/selection.jpg">
-                    <p class="itemName">メゾン ニャンコ シャツ</p>
-                    <p class="yen">¥ 00,000.00</p>
+                    <a href="#">
+                        <img class="shopItemImage" src="./assets/images/selection.jpg">
+                        <p class="itemName">メゾン ニャンコ シャツ</p>
+                        <p class="yen">¥ 00,000.00</p>
+                    </a>
                 </li>
                 <li class="shopItem">
-                    <img class="shopItemImage" src="./assets/images/selection.jpg">
-                    <p class="itemName">メゾン ニャンコ ニット</p>
-                    <p class="yen">¥ 00,000.00</p>
+                    <a href="#">
+                        <img class="shopItemImage" src="./assets/images/selection.jpg">
+                        <p class="itemName">メゾン ニャンコ ニット</p>
+                        <p class="yen">¥ 00,000.00</p>
+                    </a>
                 </li>
                 <li class="shopItem">
-                    <img class="shopItemImage" src="./assets/images/selection.jpg">
-                    <p class="itemName">メゾン ニャンコ カーディガン</p>
-                    <p class="yen">¥ 00,000.00</p>
+                    <a href="#">
+                        <img class="shopItemImage" src="./assets/images/selection.jpg">
+                        <p class="itemName">メゾン ニャンコ カーディガン</p>
+                        <p class="yen">¥ 00,000.00</p>
+                    </a>
                 </li>
                 <li class="shopItem">
-                    <img class="shopItemImage" src="./assets/images/selection.jpg">
-                    <p class="itemName">メゾン ニャンコ ワンピース</p>
-                    <p class="yen">¥ 00,000.00</p>
+                    <a href="#">
+                        <img class="shopItemImage" src="./assets/images/selection.jpg">
+                        <p class="itemName">メゾン ニャンコ ワンピース</p>
+                        <p class="yen">¥ 00,000.00</p>
+                    </a>
                 </li>
                 <li class="shopItem">
-                    <img class="shopItemImage" src="./assets/images/selection.jpg">
-                    <p class="itemName">メゾン ニャンコ ワンピース</p>
-                    <p class="yen">¥ 00,000.00</p>
+                    <a href="#">
+                        <img class="shopItemImage" src="./assets/images/selection.jpg">
+                        <p class="itemName">メゾン ニャンコ スカート</p>
+                        <p class="yen">¥ 00,000.00</p>
+                    </a>
                 </li>
             </ul>
     </section>
     <section class="service service-slider delayScroll">
                 <div class="boutique-item box">
-                    <div class="boutique"></div>
-                    <p class="boutiqueTitle">BOUTIQUE</p>
-                    <img class="serviceImage" src="./assets/images/boutique.jpg">
+                    <a href="#">
+                        <div class="boutique"></div>
+                        <p class="boutiqueTitle">BOUTIQUE</p>
+                        <img class="serviceImage" src="./assets/images/boutique.jpg">
+                    </a>
                 </div>
                 <div class="cafe-item box">
-                    <div class="cafe"></div>
-                    <p class="cafeTitle">CAFE</p>
-                    <img class="serviceImage" src="./assets/images/cafe.jpg">
+                    <a href="#">
+                        <div class="cafe"></div>
+                        <p class="cafeTitle">CAFE</p>
+                        <img class="serviceImage" src="./assets/images/cafe.jpg">
+                    </a>
                 </div>
                 <div class="musique-item box">
-                    <div class="musique"></div>
-                    <p class="musiqueTitle">MUSIQUE</p>
-                    <img class="serviceImage" src="./assets/images/musique.jpg">
+                    <a href="#">
+                        <div class="musique"></div>
+                        <p class="musiqueTitle">MUSIQUE</p>
+                        <img class="serviceImage" src="./assets/images/musique.jpg">
+                    </a>
                 </div>
     </section>
     <section class="newsLetter">
@@ -347,7 +372,7 @@
         <p class="message">メールマガジンに登録する</p>
     </section>
     <footer class="footer">
-        <h2 class="footerTitle">MAISON NYANKO</h2>
+        <h2 class="footerTitle"><a href="#">MAISON NYANKO</a></h2>
         <p class="follow">フォローする</p>
         <div class="snsIcon">
             <i data-feather="instagram"></i>
@@ -360,26 +385,26 @@
         </div>
         <div class="footerMenuWrap">
             <div class="footerMenu">
-                <h3 class="footerMenuTitle">CUSTOMER SERVICE</h3>
-                <p class="footerItem">注文を追跡</p>
-                <p class="footerItem">返品方法</p>
-                <p class="footerItem">サイズガイド</p>
-                <p class="footerItem">FAQ</p>
-                <p class="footerItem">お問い合わせ</p>
+                <h3 class="footerMenuTitle"><a href="#">CUSTOMER SERVICE</a></h3>
+                <p class="footerItem"><a href="#">注文を追跡</a></p>
+                <p class="footerItem"><a href="#">返品方法</a></p>
+                <p class="footerItem"><a href="#">サイズガイド</a></p>
+                <p class="footerItem"><a href="#">FAQ</a></p>
+                <p class="footerItem"><a href="#">お問い合わせ</a></p>
             </div>
             <div class="footerMenu">
-                <h3 class="footerMenuTitle">MAISON NYANKO</h3>
-                <p class="footerItem">Lookbook SS22</p>
-                <p class="footerItem">Lookbook FW22</p>
-                <p class="footerItem">ストアロケーター</p>
-                <p class="footerItem">採用情報</p>
-                <p class="footerItem">プレスルーム</p>
+                <h3 class="footerMenuTitle"><a href="#">MAISON NYANKO</a></h3>
+                <p class="footerItem"><a href="#">Lookbook SS22</a></p>
+                <p class="footerItem"><a href="#">Lookbook FW22</a></p>
+                <p class="footerItem"><a href="#">ストアロケーター</a></p>
+                <p class="footerItem"><a href="#">採用情報</a></p>
+                <p class="footerItem"><a href="#">プレスルーム</a></p>
             </div>
             <div class="footerMenu">
-                <h3 class="footerMenuTitle">ABOUT</h3>
-                <p class="footerItem">特定商取引法に基づく表示</p>
-                <p class="footerItem">利用規約</p>
-                <p class="footerItem">プライバシーポリシー</p>
+                <h3 class="footerMenuTitle"><a href="#">ABOUT</a></h3>
+                <p class="footerItem"><a href="#">特定商取引法に基づく表示</a></p>
+                <p class="footerItem"><a href="#">利用規約</a></p>
+                <p class="footerItem"><a href="#">プライバシーポリシー</a></p>
             </div>
         </div>
         <p class="brandBox">© Maison Nyanko 2023</p>

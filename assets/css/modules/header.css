@@ -127,45 +127,54 @@
     cursor: pointer;
 }
 
-.country-arrow{
-    border-bottom: solid 2px #000;
-    border-right: solid 2px #000;
-    width: 8px;
-    height: 8px;
-    transform: rotate(45deg);
-    margin-left: 10px;
-}
-
-.country-arrow-active{
-    border-top: solid 2px #000;
-    border-left: solid 2px #000;
-    width: 8px;
-    height: 8px;
-    transform: rotate(45deg);
-    margin-left: 10px;
-    transition: all 0.3s;
-}
-
-.language-arrow{
-    border-bottom: solid 2px #000;
-    border-right: solid 2px #000;
-    width: 8px;
-    height: 8px;
-    transform: rotate(45deg);
-    margin-left: 10px;
+.country-arrow.active{
+    transform:scale(-1,1) rotate(180deg);
 }
 
 .language{
+    position: relative;
+}
+
+.language-btn{
     display: flex;
     align-items: center;
     margin-right: 30px;
     cursor: pointer;
 }
 
-.language p{
+.language-btn p{
     font-size: 12px;
     font-weight: bold;
     margin-right: 5px;
+}
+
+.language-arrow.active{
+    transform:scale(-1,1) rotate(180deg);
+}
+
+.language-menu{
+    display: none;
+}
+
+.language-menu.active{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -25px;
+    padding: 10px 25px;
+    background-color: #fff;
+    box-shadow: 0 0 4px gray;
+    z-index: 999;
+}
+
+.language-menu li{
+    font: 16px;
+    padding-left: 15px;
+}
+
+.language-menu li:first-child{
+    font-weight: bold;
+    border-left: 1px solid #000;
 }
 
 .bag{
@@ -191,7 +200,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,6 +260,10 @@
 
 .country,.language,.user{
     display: none;
+}
+
+.bag{
+    margin-right: 20px;
 }
 
 .header-bottom{

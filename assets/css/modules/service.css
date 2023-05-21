@@ -19,7 +19,6 @@
 .boutique-item,.cafe-item,.musique-item{
     position: relative;
     width: 30%;
-    cursor: pointer;
 }
 
 .serviceImage{

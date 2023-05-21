@@ -30,7 +30,7 @@ $(function(){
     });
 
     $('.modal-close').click(function(){
-        $(this).removeClass('active');
+        $('.country-arrow').removeClass('active');
         $('.modal').fadeOut(700);
     });
 });
@@ -280,14 +280,6 @@ $('.fadeDownTrigger').each(function(){ //fadeInDownTriggerというクラス名�
     fadeAnime();/* アニメーション用の関数を呼ぶ*/
     });// 
 
-
-$(function(){
-    $('.country-arrow').click(function(){
-        $(this).removeClass('country-arrow')
-        $(this).addClass('country-arrow-active')
-    });
-});
-
 /*user-menu */
 $(function(){
     $('.user').click(function(){
@@ -302,7 +294,7 @@ $(function(){
         $('.opacity').removeClass('active');
     });
 });
-
+/*カートの中 */
 $(function(){
     $('.login-box').mouseover(function(){
         $(this).addClass('active');
@@ -324,4 +316,19 @@ $(function(){
        $('.bag-in').removeClass('active');
        $('.opacity').removeClass('active');
     });
+});
+
+/*footer */
+$('.footerMenuTitle').hover(function(){
+    $(this).toggleClass('active');
+});
+
+$('.footerItem').hover(function(){
+    $(this).toggleClass('active');
+});
+
+/*矢印の向き 言語 */
+$('.language-arrow').click(function(){
+    $(this).toggleClass('active');
+    $('.language-menu').toggleClass('active');
 });

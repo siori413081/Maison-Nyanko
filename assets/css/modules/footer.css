@@ -8,7 +8,6 @@
     font-size: 40px;
     text-align: center;
     margin: 20px 0;
-    cursor: pointer;
 }
 
 .follow{
@@ -31,12 +30,18 @@
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 10px;
-    cursor: pointer;
+}
+
+.footerMenuTitle.active{
+    border-bottom: 1px solid #000;
 }
 
 .footerItem{
     font-size: 12px;
-    cursor: pointer;
+}
+
+.footerItem.active{
+    border-bottom: 1px solid #000;
 }
 
 .brandBox{
@@ -84,14 +89,12 @@
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 10px;
-    cursor: pointer;
     text-align: center;
 }
 
 .footerItem{
     line-height: 1.5rem;
     font-size: 12px;
-    cursor: pointer;
     text-align: center;
 }
 

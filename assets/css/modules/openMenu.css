@@ -63,12 +63,14 @@
     transform: translate(-50%,-50%) rotate(-45deg);
 }
 .user-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -120%;
     width: 500px;
+    height: 100vh;
     padding: 0px 20px 20px 20px;
     background-color: #fff;
+    overflow: auto;
     z-index: 999;
     transition: all 0.3s;
 }
@@ -215,7 +217,7 @@
 
 /*カートの中*/
 .bag-in{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -120%;
     background-color: #fff;
@@ -288,11 +290,11 @@
 
 /*カートの中*/
 .bag-in{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -120%;
     background-color: #fff;
-    width: 500px;
+    width: 90%;
     height: 100vh;
     transition: all 0.7s;
 }
@@ -315,6 +317,7 @@
     bottom: 0;
     font-size: 14px;
     padding: 10px;
+    margin: 0 20px;
     border-top: 1px solid #e6e6e6;
 }
 
