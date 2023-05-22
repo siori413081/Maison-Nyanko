@@ -73,6 +73,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #000;
+    margin: 0 10px;
     overflow: hidden;
 }
 

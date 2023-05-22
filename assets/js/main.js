@@ -27,11 +27,13 @@ $(function(){
     $('.country-arrow').click(function(){
         $(this).addClass('active');
         $('.modal').fadeTo(500,0.7);
+        $('.modal-content').addClass('active')
     });
 
     $('.modal-close').click(function(){
         $('.country-arrow').removeClass('active');
-        $('.modal').fadeOut(700);
+        $('.modal').fadeOut(500);
+        $('.modal-content').removeClass('active')
     });
 });
 
@@ -331,4 +333,36 @@ $('.footerItem').hover(function(){
 $('.language-arrow').click(function(){
     $(this).toggleClass('active');
     $('.language-menu').toggleClass('active');
+});
+
+$(function(){
+    $('.shopItem').hover(function(){
+
+        let index = $('.shopItem').index(this);
+        $('.size').eq(index).toggleClass('active');
+    });
+});
+
+$(function(){
+    $('.shopItem').hover(function(){
+
+        let index = $('.shopItem').index(this);
+        $('.slick-prev').eq(index).toggleClass('active');
+        $('.slick-next').eq(index).toggleClass('active');
+    });
+});
+
+/*PC selection slider */
+$('.selection-item-slider').slick({
+    autoplay: false,//自動的に動き出すか。初期値はfalse。
+    autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
+    speed:1000,//スライドの動きのスピード。初期値は300。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    slidesToShow: 1,//スライドを画面に1枚見せる
+    slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+    arrows: true,//左右の矢印あり
+    prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+    nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+    pauseOnFocus: false,//フォーカスで一時停止を無効
+    pauseOnHover: false,//マウスホバーで一時停止を無効
 });

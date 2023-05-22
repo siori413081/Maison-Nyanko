@@ -68,8 +68,9 @@ transform: translate(-70%, -50%)rotate(135deg);
 }
 
 .shopItem{
-    width: 100%;
+    width: 24.8%;
     margin-left: 3px;
+    cursor: pointer;
 }
 
 .shopItem:first-child{
@@ -80,12 +81,92 @@ transform: translate(-70%, -50%)rotate(135deg);
     display: none;
 }
 
+.selection-item-slider{
+    position:relative;
+	z-index: 1;
+}
+
 .shopItemImage{
     width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.shopItemImage01{
+    background-image: url(../../../assets/images/selection01.jpg);
+}
+
+.shopItemImage01:hover{
+    background-image: url(../../../assets/images/selection02.jpg);
+}
+
+.shopItemImage02{
+    background-image: url(../../../assets/images/selection02.jpg);
+}
+
+.shopItemImage03{
+    background-image: url(../../../assets/images/selection03.jpg);
 }
 
 .shopItem:first-child{
     margin-left: 0;
+}
+
+.slick-prev,
+.slick-next{
+    display: none;
+}
+
+.slick-prev.active,
+.slick-next.active{
+    display: block;
+    position: absolute;/*絶対配置にする*/
+	z-index: 3;
+    top: 42%;
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #ccc;/*矢印の色*/
+    border-right: 2px solid #ccc;/*矢印の色*/
+    height: 10px;
+    width: 10px;
+}
+
+.slick-prev.active{/*戻る矢印の位置と形状*/
+    display: block;
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next.active{/*次へ矢印の位置と形状*/
+    display: block;
+    right:2.5%;
+    transform: rotate(45deg);
+}
+
+.size{
+    display: none;
+}
+
+.size.active{
+    display: block;
+    position: absolute;
+    display: flex;
+    top: 81%;
+    width: 24%;
+    z-index: 3;
+    overflow: auto;
+}
+
+.size li{
+    font-size: 14px;
+    color: #ccc;
+    padding: 0 16px;
+    border-right: 1px solid #fff;
+}
+
+.size::-webkit-scrollbar{
+    display: none;
 }
 
 .itemName{
@@ -124,6 +205,13 @@ transform: translate(-70%, -50%)rotate(135deg);
     height: 100%;
     margin-right: 5px;
     object-fit: cover;
+    cursor: pointer;
+}
+
+.selection-item-slider{
+    height: 400px;
+    background-image: url(../../../assets/images/selection01.jpg);
+    background-size: cover;
 }
 
 .selection{
@@ -147,6 +235,10 @@ transform: translate(-70%, -50%)rotate(135deg);
 }
 
 .arrow-wrap{
+    display: none;
+}
+
+.size{
     display: none;
 }
 
