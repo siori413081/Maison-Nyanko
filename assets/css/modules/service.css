@@ -115,12 +115,12 @@
     height: 450px;
     background-color: #1f5180;
 }
-
+/*
 .boutique.active{
     transform: rotate(10deg);
     transition: all 0.3s;
 }
-
+*/
 .boutiqueTitle{
     position: absolute;
     top: -30px;
@@ -141,12 +141,12 @@
     height: 450px;
     background-color: #2e8181;
 }
-
+/*
 .cafe.active{
     transform: rotate(10deg);
     transition: all 0.3s;
 }
-
+*/
 .cafeTitle{
     position: absolute;
     top: -30px;
@@ -167,12 +167,12 @@
     height: 450px;
     background-color: #fc5050;
 }
-
+/*
 .musique.active{
     transform: rotate(10deg);
     transition: all 0.3s;
 }
-
+*/
 .musiqueTitle{
     position: absolute;
     top: -30px;

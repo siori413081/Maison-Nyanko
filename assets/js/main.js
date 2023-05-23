@@ -39,56 +39,23 @@ $(function(){
 
 /* service部分の背景傾け＆文字白くする */
 $(function(){
-    $('.boutique').mouseover(function(){
-        $(this).addClass('backGroundColor-blue');
-    });
-    $('.boutique').mouseout(function(){
-        $(this).removeClass('backGroundColor-blue');
+    $('.boutique-item').hover(function(){
+        $('.boutique').toggleClass('backGroundColor-blue');
+        $('.boutiqueTitle').toggleClass('font-color-change');
     });
 });
 
 $(function(){
-    $('.boutique').mouseover(function(){
-        $('.boutiqueTitle').addClass('font-color-change');
-    });
-    $('.boutique').mouseout(function(){
-        $('.boutiqueTitle').removeClass('font-color-change');
+    $('.cafe-item').hover(function(){
+        $('.cafe').toggleClass('backGroundColor-green');
+        $('.cafeTitle').toggleClass('font-color-change');
     });
 });
 
 $(function(){
-    $('.cafe').mouseover(function(){
-        $(this).addClass('backGroundColor-green');
-    });
-    $('.cafe').mouseout(function(){
-        $(this).removeClass('backGroundColor-green');
-    });
-});
-
-$(function(){
-    $('.cafe').mouseover(function(){
-        $('.cafeTitle').addClass('font-color-change');
-    });
-    $('.cafe').mouseout(function(){
-        $('.cafeTitle').removeClass('font-color-change');
-    });
-});
-
-$(function(){
-    $('.musique').mouseover(function(){
-        $(this).addClass('backGroundColor-red');
-    });
-    $('.musique').mouseout(function(){
-        $(this).removeClass('backGroundColor-red');
-    });
-});
-
-$(function(){
-    $('.musique').mouseover(function(){
-        $('.musiqueTitle').addClass('font-color-change');
-    });
-    $('.musique').mouseout(function(){
-        $('.musiqueTitle').removeClass('font-color-change');
+    $('.musique-item').hover(function(){
+        $('.musique').toggleClass('backGroundColor-red');
+        $('.musiqueTitle').toggleClass('font-color-change');
     });
 });
 
@@ -183,7 +150,7 @@ if ( w <= 768 ){
     }
 });
 
-/* service SP 傾ける */
+/* service SP 傾ける 
 $(function(){
     $('.boutique').mouseover(function(){
         $(this).addClass('active');
@@ -201,6 +168,7 @@ $(function(){
         $(this).removeClass('active');
     });
 })
+*/
 
 $(function(){
     $('.musique').mouseover(function(){
