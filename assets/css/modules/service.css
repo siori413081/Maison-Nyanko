@@ -89,12 +89,8 @@
     padding: 50px 10% 50px 10% !important;/*前後のスライドチラ見せ*/
 }
 
-.slick-slide{
-}
-
 .service{
     display: flex;
-    padding: 100px 0;
 }
 
 .serviceImage{

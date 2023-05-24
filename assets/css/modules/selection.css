@@ -194,19 +194,20 @@ transform: translate(-70%, -50%)rotate(135deg);
 }
 
 .shopItem{
+    width: 24% !important;
     height: 350px;
     margin-right: 5px;
     cursor: pointer;
 }
 
 .selection-item-slider{
-    height: 90%;
+    height: 100%;
     background-image: url(../../../assets/images/selection01.jpg);
     background-size: cover;
 }
 
 .selection{
-    padding: 100px 0;
+    padding-top: 100px;
     overflow: hidden;
 }
 
