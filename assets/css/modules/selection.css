@@ -187,10 +187,6 @@ transform: translate(-70%, -50%)rotate(135deg);
 @media screen and (max-width: 768px) {
     /* SP style */
 
-.slick-track{
-    width: 1025px !important;
-    height: 100%;
-}
 
 .shopItemList{
     display: flex;
@@ -198,7 +194,7 @@ transform: translate(-70%, -50%)rotate(135deg);
 }
 
 .shopItem{
-    width: 19% !important;
+    height: 350px;
     margin-right: 5px;
     cursor: pointer;
 }
