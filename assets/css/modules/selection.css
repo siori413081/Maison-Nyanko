@@ -201,7 +201,7 @@ transform: translate(-70%, -50%)rotate(135deg);
 }
 
 .selection-item-slider{
-    height: 100%;
+    padding: 50% 20%;
     background-image: url(../../../assets/images/selection01.jpg);
     background-size: cover;
 }
