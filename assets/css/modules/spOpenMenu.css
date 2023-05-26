@@ -25,6 +25,7 @@
     background-color: #fff;
     transition: all 0.6s;
     overflow: auto;
+    box-sizing: border-box;
 }
 
 .sp-open-menu.active{
@@ -100,7 +101,6 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-    margin-right: 20px;
 }
 
 .sp-close-x::before,.sp-close-x::after{/*共通*/
@@ -123,7 +123,6 @@
 
 .sp-item{
     line-height: 2.5;
-    padding-top: 60px;
     padding-bottom: 20px;
 }
 
@@ -150,7 +149,7 @@
 
 .sp-bottom{
     position: absolute;
-    bottom: 65px;
+    bottom: 10px;
 }
 
 }

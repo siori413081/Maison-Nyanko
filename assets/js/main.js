@@ -81,6 +81,7 @@ $(function(){
 $(function(){
     $('.hamburger-menu-btn').click(function(){
         $('.sp-open-menu').addClass('active');
+        $('body').css('position','fixed');
     });
 });
 
@@ -88,6 +89,7 @@ $(function(){
 $(function(){
     $('.sp-close-x').click(function () {
         $('.sp-open-menu').removeClass('active');
+        $('body').css('position','');
     });
 });
 
